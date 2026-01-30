@@ -1,3 +1,4 @@
+
 import os
 import pickle
 import pytest
@@ -5,8 +6,10 @@ import pytest
 MODEL_PATH = os.path.join(os.path.dirname(__file__), '../../model.pkl')
 MODEL_PATH = os.path.abspath(MODEL_PATH)
 
+
 def test_model_file_exists():
     assert os.path.exists(MODEL_PATH), f"Le fichier modèle {MODEL_PATH} n'existe pas."
+
 
 def test_model_load():
     if not os.path.exists(MODEL_PATH):
