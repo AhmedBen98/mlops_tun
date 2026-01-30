@@ -40,7 +40,7 @@ jobs:
         flake8 src/ --count --max-complexity=10 --max-line-length=100 --statistics
     - name: Run unit tests
       run: |
-        pytest mlops/tests/ -v --cov=src --cov-report=xml --cov-report=html
+        pytest src/tests/ -v --cov=src --cov-report=xml --cov-report=html
     - name: Upload coverage reports
       uses: codecov/codecov-action@v3
       with:
