@@ -2,9 +2,9 @@ name: ML Pipeline CI/CD
 
 on:
   push:
-    branches: [ main, develop, dataset-* ]
+    branches: [ master, develop, dataset-* ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 env:
