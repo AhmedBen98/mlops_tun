@@ -7,6 +7,7 @@ Garde un historique des détections de drift et gère les alertes
 from pathlib import Path
 from typing import Dict, List, Optional
 import logging
+import numpy as np
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
