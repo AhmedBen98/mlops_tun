@@ -84,7 +84,7 @@ jobs:
       - name: Setup DVC
         run: |
           pip install dvc
-          dvc init --no-scm || true
+          pip install "pathspec<0.12.0"
           dvc pull
       - name: Run data processing
         run: |
