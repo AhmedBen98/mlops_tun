@@ -4,9 +4,9 @@ import tempfile
 import numpy as np
 
 if __name__ == "__main__" or True:
-    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from utils import (
+from src.utils import (
     save_metrics, load_metrics, calculate_regression_metrics,
     calculate_classification_metrics, ensure_dir
 )
