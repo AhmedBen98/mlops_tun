@@ -1,0 +1,10 @@
+artifact_location: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/mlruns/433328069332404108/models/m-c0b72a4e68aa404a858e986e2fdede5b/artifacts
+creation_timestamp: 1769803217944
+experiment_id: '433328069332404108'
+last_updated_timestamp: 1769803221794
+model_id: m-c0b72a4e68aa404a858e986e2fdede5b
+model_type: null
+name: model
+source_run_id: 95c6136ccc5a4f8faeeafab7784f3904
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/mlruns/433328069332404108/a30e01e9221e498693e1e55c66f3cacc/artifacts
+end_time: 1769804502930
+entry_point_name: ''
+experiment_id: '433328069332404108'
+lifecycle_stage: active
+run_id: a30e01e9221e498693e1e55c66f3cacc
+run_name: baseline-model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769804497795
+status: 3
+tags: []
+user_id: abenabderrazak

@@ -1,0 +1,36 @@
+artifact_path: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/mlruns/433328069332404108/models/m-bce20e96fee94302a7f1bb57484f21ec/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-bce20e96fee94302a7f1bb57484f21ec
+model_size_bytes: 3837082
+model_uuid: m-bce20e96fee94302a7f1bb57484f21ec
+prompts: null
+run_id: a30e01e9221e498693e1e55c66f3cacc
+signature:
+  inputs: '[{"type": "double", "name": "num_users", "required": true}, {"type": "double",
+    "name": "desc_length", "required": true}, {"type": "double", "name": "is_touristique",
+    "required": true}, {"type": "double", "name": "num_users^2", "required": true},
+    {"type": "double", "name": "num_users users_desc_interaction", "required": true},
+    {"type": "double", "name": "std_age users_desc_interaction", "required": true},
+    {"type": "double", "name": "description desc_length", "required": true}, {"type":
+    "double", "name": "desc_length users_desc_interaction", "required": true}, {"type":
+    "double", "name": "is_touristique^2", "required": true}, {"type": "double", "name":
+    "is_touristique users_desc_interaction", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-01-30 20:21:39.394192'

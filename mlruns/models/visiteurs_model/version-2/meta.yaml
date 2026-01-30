@@ -1,0 +1,15 @@
+creation_timestamp: 1769803221825
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1769803221825
+model_id: m-c0b72a4e68aa404a858e986e2fdede5b
+name: visiteurs_model
+run_id: 95c6136ccc5a4f8faeeafab7784f3904
+run_link: null
+source: models:/m-c0b72a4e68aa404a858e986e2fdede5b
+status: READY
+status_message: null
+storage_location: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/mlruns/433328069332404108/models/m-c0b72a4e68aa404a858e986e2fdede5b/artifacts
+user_id: null
+version: 2

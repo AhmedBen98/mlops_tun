@@ -12,3 +12,10 @@ feature_engineering:
   interaction_only: false
   feature_selection: true
   n_features_to_select: 10
+
+evaluation:
+  generate_plots: true
+  save_predictions: true
+
+mlflow:
+  tracking_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns

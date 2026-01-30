@@ -1,0 +1,11 @@
+feature,importance
+description desc_length,0.19349616692864424
+is_touristique^2,0.1901667099534223
+is_touristique,0.1888208101129152
+std_age users_desc_interaction,0.1062000868473604
+desc_length users_desc_interaction,0.08803498729678642
+desc_length,0.08733676269232732
+num_users users_desc_interaction,0.08051592444869149
+is_touristique users_desc_interaction,0.0485843650755283
+num_users,0.009642122759157353
+num_users^2,0.007202063885166947
