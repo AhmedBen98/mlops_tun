@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: /home/abenabderrazak/Bureau/djerba-dreamer-main/.venv/bin/python 
+      train.py
+    deps:
+    - path: data/raw/mlops_dataset_v1_original.csv
+      hash: md5
+      md5: 47798d59d69d0b7a78dff0b2260d15f4
+      size: 132388
+    - path: train.py
+      hash: md5
+      md5: a2a36092ca07ba11c451c70fc882d347
+      size: 1208
+    outs:
+    - path: model.pkl
+      hash: md5
+      md5: 5b97083973107ac58bf26c3e21ea9ce1
+      size: 1119879
