@@ -1,0 +1,28 @@
+{
+  "threshold_std": 2.0,
+  "n_samples_prod": 121,
+  "drift_detected": {
+    "city_name": false,
+    "country": false,
+    "location_id": false,
+    "num_users": true,
+    "avg_age": true,
+    "std_age": false,
+    "min_age": false,
+    "max_age": false,
+    "admin_ratio": false,
+    "description": false,
+    "region": false,
+    "desc_length": false,
+    "is_touristique": false,
+    "is_capitale": false,
+    "is_historique": false,
+    "is_moderne": false,
+    "visiteurs": false
+  },
+  "drift_summary": {
+    "total_features": 17,
+    "features_with_drift": 2,
+    "drift_percentage": 11.764705882352942
+  }
+}

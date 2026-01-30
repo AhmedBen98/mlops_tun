@@ -1,0 +1,36 @@
+artifact_path: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/355068541358622728/models/m-28214b288b47437fab3c6ef67ceb01e2/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-28214b288b47437fab3c6ef67ceb01e2
+model_size_bytes: 2322465
+model_uuid: m-28214b288b47437fab3c6ef67ceb01e2
+prompts: null
+run_id: 12ee2f2af0a2469aac93a7ef3655eb08
+signature:
+  inputs: '[{"type": "double", "name": "num_users", "required": true}, {"type": "double",
+    "name": "desc_length", "required": true}, {"type": "double", "name": "is_touristique",
+    "required": true}, {"type": "double", "name": "age_admin_interaction", "required":
+    true}, {"type": "double", "name": "num_users age_admin_interaction", "required":
+    true}, {"type": "double", "name": "avg_age admin_ratio", "required": true}, {"type":
+    "double", "name": "std_age age_admin_interaction", "required": true}, {"type":
+    "double", "name": "min_age admin_ratio", "required": true}, {"type": "double",
+    "name": "is_touristique^2", "required": true}, {"type": "double", "name": "is_capitale
+    users_desc_interaction", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-01-30 20:32:18.239234'

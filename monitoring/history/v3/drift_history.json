@@ -1,0 +1,148 @@
+[
+  {
+    "threshold_std": 2.0,
+    "n_samples_prod": 817,
+    "drift_detected": {
+      "location_id": true,
+      "num_users": false,
+      "avg_age": true,
+      "std_age": true,
+      "min_age": true,
+      "max_age": true,
+      "admin_ratio": false,
+      "desc_length": true,
+      "is_touristique": false,
+      "is_capitale": false,
+      "is_historique": false,
+      "is_moderne": true,
+      "visiteurs": false
+    },
+    "drift_summary": {
+      "total_features": 13,
+      "features_with_drift": 7,
+      "drift_percentage": 53.84615384615385
+    },
+    "timestamp": "2026-01-30T22:35:35.556257",
+    "version": "v3"
+  },
+  {
+    "threshold_std": 2.0,
+    "n_samples_prod": 145,
+    "drift_detected": {
+      "city_name": false,
+      "country": false,
+      "location_id": false,
+      "num_users": true,
+      "avg_age": false,
+      "std_age": false,
+      "min_age": false,
+      "max_age": false,
+      "admin_ratio": false,
+      "description": false,
+      "region": false,
+      "desc_length": false,
+      "is_touristique": false,
+      "is_capitale": false,
+      "is_historique": false,
+      "is_moderne": false,
+      "visiteurs": false
+    },
+    "drift_summary": {
+      "total_features": 17,
+      "features_with_drift": 1,
+      "drift_percentage": 5.882352941176471
+    },
+    "timestamp": "2026-01-30T22:36:50.038758",
+    "version": "v3"
+  },
+  {
+    "threshold_std": 2.0,
+    "n_samples_prod": 145,
+    "drift_detected": {
+      "city_name": false,
+      "country": false,
+      "location_id": false,
+      "num_users": true,
+      "avg_age": true,
+      "std_age": false,
+      "min_age": false,
+      "max_age": true,
+      "admin_ratio": false,
+      "description": false,
+      "region": false,
+      "desc_length": false,
+      "is_touristique": false,
+      "is_capitale": false,
+      "is_historique": false,
+      "is_moderne": false,
+      "visiteurs": false
+    },
+    "drift_summary": {
+      "total_features": 17,
+      "features_with_drift": 3,
+      "drift_percentage": 17.647058823529413
+    },
+    "timestamp": "2026-01-30T22:38:09.084364",
+    "version": "v3"
+  },
+  {
+    "threshold_std": 2.0,
+    "n_samples_prod": 145,
+    "drift_detected": {
+      "city_name": false,
+      "country": false,
+      "location_id": false,
+      "num_users": true,
+      "avg_age": true,
+      "std_age": false,
+      "min_age": false,
+      "max_age": true,
+      "admin_ratio": false,
+      "description": false,
+      "region": false,
+      "desc_length": false,
+      "is_touristique": false,
+      "is_capitale": false,
+      "is_historique": false,
+      "is_moderne": false,
+      "visiteurs": false
+    },
+    "drift_summary": {
+      "total_features": 17,
+      "features_with_drift": 3,
+      "drift_percentage": 17.647058823529413
+    },
+    "timestamp": "2026-01-30T22:38:19.100254",
+    "version": "v3"
+  },
+  {
+    "threshold_std": 2.0,
+    "n_samples_prod": 145,
+    "drift_detected": {
+      "city_name": false,
+      "country": false,
+      "location_id": false,
+      "num_users": true,
+      "avg_age": true,
+      "std_age": false,
+      "min_age": false,
+      "max_age": true,
+      "admin_ratio": false,
+      "description": false,
+      "region": false,
+      "desc_length": false,
+      "is_touristique": false,
+      "is_capitale": false,
+      "is_historique": false,
+      "is_moderne": false,
+      "visiteurs": false
+    },
+    "drift_summary": {
+      "total_features": 17,
+      "features_with_drift": 3,
+      "drift_percentage": 17.647058823529413
+    },
+    "timestamp": "2026-01-30T22:38:33.502189",
+    "version": "v3"
+  }
+]

@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/9bab729798414d469f6fe87d8feec5a4/artifacts
+end_time: 1769805499127
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: 9bab729798414d469f6fe87d8feec5a4
+run_name: clumsy-pig-393
+run_uuid: 9bab729798414d469f6fe87d8feec5a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805499115
+status: 3
+tags: []
+user_id: abenabderrazak

@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/43090310291a4b8f88cd6879cbbf3901/artifacts
+end_time: 1769805508799
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: 43090310291a4b8f88cd6879cbbf3901
+run_name: shivering-kite-959
+run_uuid: 43090310291a4b8f88cd6879cbbf3901
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805508785
+status: 3
+tags: []
+user_id: abenabderrazak

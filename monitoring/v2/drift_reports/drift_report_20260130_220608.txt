@@ -1,0 +1,4 @@
+RAPPORT DE DATA DRIFT
+Seuil (écarts-types): 2.0
+Nombre de features: 17
+Features avec drift: 0 (0.0%)

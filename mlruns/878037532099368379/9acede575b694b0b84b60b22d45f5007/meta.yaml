@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/9acede575b694b0b84b60b22d45f5007/artifacts
+end_time: 1769805495845
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: 9acede575b694b0b84b60b22d45f5007
+run_name: luminous-elk-991
+run_uuid: 9acede575b694b0b84b60b22d45f5007
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805495829
+status: 3
+tags: []
+user_id: abenabderrazak

@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/d59a333585614020b467c9513c64a79e/artifacts
+end_time: 1769805501346
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: d59a333585614020b467c9513c64a79e
+run_name: gregarious-gnat-134
+run_uuid: d59a333585614020b467c9513c64a79e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805501337
+status: 3
+tags: []
+user_id: abenabderrazak

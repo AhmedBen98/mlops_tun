@@ -1,0 +1,24 @@
+{
+  "threshold_std": 2.0,
+  "n_samples_prod": 401,
+  "drift_detected": {
+    "location_id": true,
+    "num_users": false,
+    "avg_age": true,
+    "std_age": true,
+    "min_age": true,
+    "max_age": true,
+    "admin_ratio": false,
+    "desc_length": true,
+    "is_touristique": false,
+    "is_capitale": false,
+    "is_historique": false,
+    "is_moderne": true,
+    "visiteurs": false
+  },
+  "drift_summary": {
+    "total_features": 13,
+    "features_with_drift": 7,
+    "drift_percentage": 53.84615384615385
+  }
+}

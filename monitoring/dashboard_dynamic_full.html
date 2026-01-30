@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring MLOps - Vue Dynamique</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .stat-card .icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .stat-card .label {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .ok { color: #27ae60; }
+        .warning { color: #f39c12; }
+        .critical { color: #e74c3c; }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .chart-container {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .chart-container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .details-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .details-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e74c3c;
+        }
+        
+        .alert-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 5px solid;
+            transition: all 0.3s ease;
+        }
+        
+        .alert-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .alert-ok {
+            background-color: #d4edda;
+            border-color: #28a745;
+        }
+        
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffc107;
+        }
+        
+        .alert-critical {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+        }
+        
+        .version-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 12px 25px;
+            background: #ecf0f1;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+        
+        .tab:hover {
+            background: #bdc3c7;
+        }
+        
+        .tab.active {
+            background: #3498db;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .recommendation-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .recommendation-box h3 {
+            margin-bottom: 15px;
+        }
+        
+        .recommendation-box ul {
+            list-style: none;
+        }
+        
+        .recommendation-box li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .recommendation-box li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            color: #7f8c8d;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📊 Dashboard Monitoring MLOps</h1>
+            <div class="subtitle">Vue Dynamique et Interactive -</div>
+        </div>
+        
+        <!-- Statistics Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="icon">📊</div>
+                <div class="value">2</div>
+                <div class="label">Alertes Drift</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">📈</div>
+                <div class="value">3</div>
+                <div class="label">Alertes Métriques</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon ok">✓</div>
+                <div class="value ok">1</div>
+                <div class="label">Status OK</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon warning">⚠️</div>
+                <div class="value warning">1</div>
+                <div class="label">Warnings</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon critical">🔴</div>
+                <div class="value critical">1</div>
+                <div class="label">Critiques</div>
+            </div>
+        </div>
+        
+        <!-- Charts -->
+        <div class="charts-grid">
+            <!-- Drift Percentage Chart -->
+            <div class="chart-container">
+                <h2>📊 Pourcentage de Drift par Version</h2>
+                <div class="chart-wrapper">
+                    <canvas id="driftChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Metrics Degradation Chart -->
+            <div class="chart-container">
+                <h2>📈 Dégradation des Métriques par Version</h2>
+                <div class="chart-wrapper">
+                    <canvas id="metricsChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Alert Status Distribution -->
+            <div class="chart-container">
+                <h2>🎯 Distribution des Niveaux d'Alerte</h2>
+                <div class="chart-wrapper">
+                    <canvas id="statusChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Correlation Chart -->
+            <div class="chart-container">
+                <h2>🔗 Corrélation Drift vs Métriques</h2>
+                <div class="chart-wrapper">
+                    <canvas id="correlationChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Timeline Chart -->
+            <div class="chart-container full-width">
+                <h2>⏱️ Évolution Temporelle des Alertes</h2>
+                <div class="chart-wrapper">
+                    <canvas id="timelineChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Detailed Alerts Section with Tabs -->
+        <div class="details-section">
+            <h2>📋 Détails des Alertes</h2>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('drift')">Data Drift</button>
+                <button class="tab" onclick="switchTab('metrics')">Métriques</button>
+                <button class="tab" onclick="switchTab('recommendations')">Recommandations</button>
+            </div>
+            
+            <div id="drift-content" class="tab-content active">
+                
+        <div class="alert-item alert-ok">
+            <span class="version-badge">v1</span>
+            <strong>OK</strong> - Drift: 12.5% (2/16 features)
+        </div>
+        
+        <div class="alert-item alert-warning">
+            <span class="version-badge">v2</span>
+            <strong>WARNING</strong> - Drift: 37.5% (6/16 features)
+        </div>
+        
+        <div class="alert-item alert-critical">
+            <span class="version-badge">v3</span>
+            <strong>CRITICAL</strong> - Drift: 43.8% (7/16 features)
+        </div>
+        
+            </div>
+            
+            <div id="metrics-content" class="tab-content">
+                
+        <div class="alert-item alert-critical">
+            <span class="version-badge">v1</span>
+            <strong>CRITICAL</strong> - 4/5 métriques dégradées (80.0%)
+            <br><em>🔴 CRITICAL: 4/5 métrique(s) sévèrement dégradée(s): </em>
+        </div>
+        <div class="alert-item alert-ok">
+            <span class="version-badge">v2</span>
+            <strong>OK</strong> - 0/5 métriques dégradées (0.0%)
+            <br><em>✓ Toutes les métriques sont OK (5 métriques surveillées)</em>
+        </div>
+        <div class="alert-item alert-warning">
+            <span class="version-badge">v3</span>
+            <strong>WARNING</strong> - 1/5 métriques dégradées (20.0%)
+            <br><em>⚠️  WARNING: 1/5 métrique(s) dégradée(s): </em>
+        </div>
+            </div>
+            
+            <div id="recommendations-content" class="tab-content">
+                
+        <div class="recommendation-box" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+            <h3>🚨 ACTIONS CRITIQUES REQUISES</h3>
+            <ul>
+                <li>Les versions v1 nécessitent une action immédiate</li>
+                <li>Stopper le déploiement en production si possible</li>
+                <li>Lancer une investigation approfondie immédiatement</li>
+                <li>Planifier un ré-entraînement urgent du modèle</li>
+                <li>Notifier l'équipe MLOps et les stakeholders</li>
+            </ul>
+        </div>
+        
+        <div class="recommendation-box" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
+            <h3>⚠️ SURVEILLANCE RENFORCÉE</h3>
+            <ul>
+                <li>Les versions v3 montrent des signes de dégradation</li>
+                <li>Augmenter la fréquence du monitoring</li>
+                <li>Analyser les tendances sur les prochaines exécutions</li>
+                <li>Préparer un plan de ré-entraînement préventif</li>
+                <li>Vérifier la corrélation avec le data drift</li>
+            </ul>
+        </div>
+        
+                <div class="recommendation-box">
+                    <h3>Recommandations pour v1</h3>
+                    <ul>
+                <li>🚨 ACTION IMMÉDIATE REQUISE</li><li>Stopper le déploiement en production si possible</li><li>Lancer une investigation approfondie</li><li>Vérifier la qualité des données en production</li><li>Ré-entraîner le modèle avec des données plus récentes</li><li>Notifier l'équipe MLOps et les stakeholders</li>
+                    </ul>
+                </div>
+                
+                <div class="recommendation-box">
+                    <h3>Recommandations pour v3</h3>
+                    <ul>
+                <li>Investiguer les causes de la dégradation</li><li>Vérifier si le data drift est corrélé avec la dégradation</li><li>Analyser les erreurs sur des échantillons spécifiques</li><li>Considérer un ré-entraînement si la tendance persiste</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Dashboard généré automatiquement par le système de monitoring MLOps</p>
+            
+        </div>
+    </div>
+    
+    <script>
+        // Data for charts
+        const driftData = {"versions": ["v1", "v2", "v3"], "percentages": [12.5, 37.5, 43.8]};
+        const metricsData = {"versions": ["v1", "v2", "v3"], "degradation_percentages": [80.0, 0.0, 20.0], "status_counts": {"ok": 1, "warning": 1, "critical": 1}, "correlation_data": [{"x": 12.5, "y": 80.0}, {"x": 37.5, "y": 0.0}, {"x": 43.8, "y": 20.0}], "timeline_labels": ["v1", "v2", "v3"], "timeline_drift": [12.5, 37.5, 43.8], "timeline_degradation": [80.0, 0.0, 20.0]};
+        
+        // Chart.js configurations
+        Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+        Chart.defaults.font.size = 12;
+        
+        // Drift Percentage Chart
+        new Chart(document.getElementById('driftChart'), {
+            type: 'bar',
+            data: {
+                labels: driftData.versions,
+                datasets: [{
+                    label: 'Pourcentage de Drift (%)',
+                    data: driftData.percentages,
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(255, 99, 132, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: true },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.parsed.y.toFixed(1) + '%';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Metrics Degradation Chart
+        new Chart(document.getElementById('metricsChart'), {
+            type: 'bar',
+            data: {
+                labels: metricsData.versions,
+                datasets: [{
+                    label: 'Dégradation (%)',
+                    data: metricsData.degradation_percentages,
+                    backgroundColor: [
+                        'rgba(231, 76, 60, 0.7)',
+                        'rgba(46, 204, 113, 0.7)',
+                        'rgba(243, 156, 18, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(231, 76, 60, 1)',
+                        'rgba(46, 204, 113, 1)',
+                        'rgba(243, 156, 18, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: true },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return 'Dégradation: ' + context.parsed.y.toFixed(1) + '%';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Status Distribution Chart
+        const statusCounts = metricsData.status_counts;
+        new Chart(document.getElementById('statusChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['OK', 'WARNING', 'CRITICAL'],
+                datasets: [{
+                    data: [statusCounts.ok, statusCounts.warning, statusCounts.critical],
+                    backgroundColor: [
+                        'rgba(46, 204, 113, 0.8)',
+                        'rgba(243, 156, 18, 0.8)',
+                        'rgba(231, 76, 60, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(46, 204, 113, 1)',
+                        'rgba(243, 156, 18, 1)',
+                        'rgba(231, 76, 60, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = ((context.parsed / total) * 100).toFixed(1);
+                                return context.label + ': ' + context.parsed + ' (' + percentage + '%)';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Correlation Chart
+        new Chart(document.getElementById('correlationChart'), {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Versions',
+                    data: metricsData.correlation_data,
+                    backgroundColor: [
+                        'rgba(231, 76, 60, 0.7)',
+                        'rgba(46, 204, 113, 0.7)',
+                        'rgba(243, 156, 18, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(231, 76, 60, 1)',
+                        'rgba(46, 204, 113, 1)',
+                        'rgba(243, 156, 18, 1)'
+                    ],
+                    borderWidth: 2,
+                    pointRadius: 10,
+                    pointHoverRadius: 12
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return 'Drift: ' + context.parsed.x.toFixed(1) + '%, Dégradation: ' + context.parsed.y.toFixed(1) + '%';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Pourcentage de Drift (%)'
+                        },
+                        beginAtZero: true
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Dégradation Métriques (%)'
+                        },
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        
+        // Timeline Chart
+        new Chart(document.getElementById('timelineChart'), {
+            type: 'line',
+            data: {
+                labels: metricsData.timeline_labels,
+                datasets: [
+                    {
+                        label: 'Drift %',
+                        data: metricsData.timeline_drift,
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Dégradation Métriques %',
+                        data: metricsData.timeline_degradation,
+                        borderColor: 'rgba(231, 76, 60, 1)',
+                        backgroundColor: 'rgba(231, 76, 60, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Pourcentage (%)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Versions'
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Tab switching function
+        function switchTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName + '-content').classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

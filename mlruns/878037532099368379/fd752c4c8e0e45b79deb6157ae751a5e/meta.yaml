@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/fd752c4c8e0e45b79deb6157ae751a5e/artifacts
+end_time: 1769805509306
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: fd752c4c8e0e45b79deb6157ae751a5e
+run_name: painted-sow-741
+run_uuid: fd752c4c8e0e45b79deb6157ae751a5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805509289
+status: 3
+tags: []
+user_id: abenabderrazak

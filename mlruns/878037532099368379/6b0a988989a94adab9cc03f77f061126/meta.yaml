@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/6b0a988989a94adab9cc03f77f061126/artifacts
+end_time: 1769805513520
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: 6b0a988989a94adab9cc03f77f061126
+run_name: visiteurs-optuna-study
+run_uuid: 6b0a988989a94adab9cc03f77f061126
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805493795
+status: 3
+tags: []
+user_id: abenabderrazak

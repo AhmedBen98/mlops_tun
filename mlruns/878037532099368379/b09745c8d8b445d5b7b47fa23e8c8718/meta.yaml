@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/b09745c8d8b445d5b7b47fa23e8c8718/artifacts
+end_time: 1769805498719
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: b09745c8d8b445d5b7b47fa23e8c8718
+run_name: respected-rook-132
+run_uuid: b09745c8d8b445d5b7b47fa23e8c8718
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805498707
+status: 3
+tags: []
+user_id: abenabderrazak

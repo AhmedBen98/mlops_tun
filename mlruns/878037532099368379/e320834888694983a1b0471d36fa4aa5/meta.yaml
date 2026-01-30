@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/e320834888694983a1b0471d36fa4aa5/artifacts
+end_time: 1769805499410
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: e320834888694983a1b0471d36fa4aa5
+run_name: sneaky-wasp-23
+run_uuid: e320834888694983a1b0471d36fa4aa5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805499401
+status: 3
+tags: []
+user_id: abenabderrazak

@@ -1,0 +1,7 @@
+RAPPORT DE DATA DRIFT
+Seuil (écarts-types): 2.0
+Nombre de features: 17
+Features avec drift: 3 (17.6%)
+  - DRIFT détecté: num_users
+  - DRIFT détecté: avg_age
+  - DRIFT détecté: max_age

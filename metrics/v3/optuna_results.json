@@ -1,0 +1,24 @@
+{
+    "dataset": "visiteurs",
+    "n_trials": 30,
+    "best_score": -310.0584096665723,
+    "best_params": {
+        "n_estimators": 98,
+        "learning_rate": 0.04737440085247713,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "min_samples_leaf": 7,
+        "subsample": 0.8319326584910446
+    },
+    "optimization_time": 18.157230377197266,
+    "train_mse": 66853.17524605675,
+    "train_rmse": 258.55980980434055,
+    "train_mae": 220.61915645291938,
+    "train_r2": 0.6277337702896302,
+    "train_mape": 14.06931828165156,
+    "val_mse": 82532.0632929127,
+    "val_rmse": 287.2839419336081,
+    "val_mae": 240.7595078712228,
+    "val_r2": 0.3953141656883271,
+    "val_mape": 14.386315152982965
+}

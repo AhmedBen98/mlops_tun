@@ -1,0 +1,15 @@
+artifact_uri: /home/abenabderrazak/Bureau/djerba-dreamer-main/mlruns/878037532099368379/c42d81dc93894e7aa79790dabb7e5c80/artifacts
+end_time: 1769805499868
+entry_point_name: ''
+experiment_id: '878037532099368379'
+lifecycle_stage: active
+run_id: c42d81dc93894e7aa79790dabb7e5c80
+run_name: rogue-slug-180
+run_uuid: c42d81dc93894e7aa79790dabb7e5c80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769805499857
+status: 3
+tags: []
+user_id: abenabderrazak
