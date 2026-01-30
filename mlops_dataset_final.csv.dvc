@@ -1,5 +1,5 @@
 outs:
-- md5: c50668df0f82b70433f7402f0dae4803
-  size: 100968
+- md5: 281dcb889c1208024d665fc4ab17df49
+  size: 772
   hash: md5
   path: mlops_dataset_final.csv
