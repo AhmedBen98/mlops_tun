@@ -1,0 +1,402 @@
+city_name,country,location_id,num_users,avg_age,std_age,min_age,max_age,admin_ratio,description,region,desc_length,is_touristique,is_capitale,is_historique,is_moderne,visiteurs
+Aalborg,Danemark,1147,1,52.0,0.0,52,52,0.0,"Ville industrielle, connue pour son port et ses festivals.",Europe_Nord,58.0,0,0,0,0,782
+Aalborg-Est,Danemark,1849,2,34.5,0.7071067811865476,34,35,0.0,"Ville industrielle, connue pour son port et ses festivals. (quartier-Est)",Europe_Nord,73.0,0,0,0,0,1365
+Aarhus-Nord,Danemark,1379,1,26.0,0.0,26,26,0.0,"Ville universitaire, réputée pour son musée d’art moderne. (quartier-Nord)",Europe_Nord,74.0,1,0,0,1,2200
+Aarhus-Sud,Danemark,1613,2,43.5,21.920310216782973,28,59,0.0,"Ville universitaire, réputée pour son musée d’art moderne. (quartier-Sud)",Europe_Nord,73.0,1,0,0,1,1700
+Abu Dhabi,Émirats arabes unis,1234,3,36.333333333333336,16.441816606851365,24,55,0.3333333333333333,"Capitale, réputée pour ses musées et ses îles.",Moyen_Orient,46.0,1,1,0,0,1366
+Abu Dhabi-Est,Émirats arabes unis,1936,2,55.5,2.1213203435596424,54,57,0.5,"Capitale, réputée pour ses musées et ses îles. (quartier-Est)",Moyen_Orient,61.0,1,1,0,0,1381
+Abu Dhabi-Nord,Émirats arabes unis,1468,1,50.0,0.0,50,50,1.0,"Capitale, réputée pour ses musées et ses îles. (quartier-Nord)",Moyen_Orient,62.0,1,1,0,0,1920
+Abu Dhabi-Sud,Émirats arabes unis,1702,2,22.0,4.242640687119285,19,25,1.0,"Capitale, réputée pour ses musées et ses îles. (quartier-Sud)",Moyen_Orient,61.0,1,1,0,0,1330
+Abuja,Nigeria,1216,1,57.0,0.0,57,57,1.0,"Capitale, réputée pour son architecture moderne.",Afrique,48.0,1,1,0,1,1694
+Abuja-Est,Nigeria,1918,1,36.0,0.0,36,36,0.0,"Capitale, réputée pour son architecture moderne. (quartier-Est)",Afrique,63.0,1,1,0,1,1351
+Abuja-Sud,Nigeria,1684,3,37.66666666666666,17.21433511156714,24,57,0.6666666666666666,"Capitale, réputée pour son architecture moderne. (quartier-Sud)",Afrique,63.0,1,1,0,1,1896
+Adélaïde-Est,Australie,1810,1,44.0,0.0,44,44,1.0,"Ville du sud, célèbre pour ses festivals et ses vignobles. (quartier-Est)",Océanie,73.0,1,0,0,0,1544
+Agadir,Maroc,1031,1,19.0,0.0,19,19,1.0,"Ville balnéaire, connue pour ses plages et sa marina.",Maghreb,53.0,1,0,0,0,1460
+Agadir-Est,Maroc,1733,3,27.0,6.0,21,33,0.3333333333333333,"Ville balnéaire, connue pour ses plages et sa marina. (quartier-Est)",Maghreb,68.0,1,0,0,0,1938
+Agadir-Nord,Maroc,1265,2,48.0,0.0,48,48,0.0,"Ville balnéaire, connue pour ses plages et sa marina. (quartier-Nord)",Maghreb,69.0,1,0,0,0,1477
+Agadir-Ouest,Maroc,1967,1,40.0,0.0,40,40,0.0,"Ville balnéaire, connue pour ses plages et sa marina. (quartier-Ouest)",Maghreb,70.0,1,0,0,0,1672
+Ajman,Émirats arabes unis,1236,1,43.0,0.0,43,43,0.0,"Ville côtière, réputée pour ses plages et son calme.",Moyen_Orient,52.0,1,0,0,0,1219
+Ajman-Est,Émirats arabes unis,1938,2,36.0,7.071067811865476,31,41,0.5,"Ville côtière, réputée pour ses plages et son calme. (quartier-Est)",Moyen_Orient,67.0,1,0,0,0,2241
+Ajman-Sud,Émirats arabes unis,1704,1,19.0,0.0,19,19,0.0,"Ville côtière, réputée pour ses plages et son calme. (quartier-Sud)",Moyen_Orient,67.0,1,0,0,0,1933
+Alexandrie-Est,Égypte,1797,1,39.0,0.0,39,39,1.0,"Ville portuaire, célèbre pour sa bibliothèque et son histoire antique. (quartier-Est)",Afrique,85.0,1,0,1,0,1580
+Alexandrie-Nord,Égypte,1329,1,41.0,0.0,41,41,1.0,"Ville portuaire, célèbre pour sa bibliothèque et son histoire antique. (quartier-Nord)",Afrique,86.0,1,0,1,0,2121
+Alexandrie-Sud,Égypte,1563,2,24.0,1.4142135623730951,23,25,0.5,"Ville portuaire, célèbre pour sa bibliothèque et son histoire antique. (quartier-Sud)",Afrique,85.0,1,0,1,0,1858
+Alger-Nord,Algérie,1268,1,43.0,0.0,43,43,0.0,"Capitale algérienne, connue pour la Casbah et la baie d’Alger. (quartier-Nord)",Maghreb,78.0,0,1,0,0,1649
+Amsterdam-Est,Pays-Bas,1866,1,29.0,0.0,29,29,0.0,"Capitale néerlandaise, connue pour ses canaux et ses musées. (quartier-Est)",Europe_Ouest,75.0,1,1,0,0,1693
+Ankara,Turquie,1100,2,35.5,13.435028842544405,26,45,0.0,"Capitale turque, connue pour le mausolée d’Atatürk.",Moyen_Orient,51.0,0,1,0,0,1201
+Ankara-Est,Turquie,1802,1,50.0,0.0,50,50,1.0,"Capitale turque, connue pour le mausolée d’Atatürk. (quartier-Est)",Moyen_Orient,66.0,0,1,0,0,1173
+Ankara-Nord,Turquie,1334,1,57.0,0.0,57,57,0.0,"Capitale turque, connue pour le mausolée d’Atatürk. (quartier-Nord)",Moyen_Orient,67.0,0,1,0,0,1575
+Ankara-Sud,Turquie,1568,1,45.0,0.0,45,45,1.0,"Capitale turque, connue pour le mausolée d’Atatürk. (quartier-Sud)",Moyen_Orient,66.0,0,1,0,0,1145
+Annaba-Nord,Algérie,1271,1,30.0,0.0,30,30,1.0,"Ville côtière, connue pour la basilique Saint-Augustin. (quartier-Nord)",Maghreb,71.0,0,0,0,0,1001
+Annaba-Ouest,Algérie,1973,3,46.66666666666666,18.82374387132733,25,59,0.0,"Ville côtière, connue pour la basilique Saint-Augustin. (quartier-Ouest)",Maghreb,72.0,0,0,0,0,1975
+Annaba-Sud,Algérie,1505,2,28.5,7.7781745930520225,23,34,0.5,"Ville côtière, connue pour la basilique Saint-Augustin. (quartier-Sud)",Maghreb,70.0,0,0,0,0,1176
+Antalya,Turquie,1102,2,24.5,9.192388155425116,18,31,1.0,"Ville balnéaire, célèbre pour ses plages et ses ruines antiques.",Moyen_Orient,64.0,1,0,0,0,1500
+Antalya-Est,Turquie,1804,1,46.0,0.0,46,46,0.0,"Ville balnéaire, célèbre pour ses plages et ses ruines antiques. (quartier-Est)",Moyen_Orient,79.0,1,0,0,0,1849
+Antofagasta,Chili,1128,2,29.0,9.899494936611664,22,36,0.0,"Ville minière, réputée pour ses paysages désertiques.",Amériques,53.0,1,0,0,0,1543
+Anvers,Belgique,1170,3,28.33333333333333,7.234178138070235,20,33,0.6666666666666666,"Ville portuaire, réputée pour ses diamants et sa mode.",Europe_Ouest,54.0,1,0,0,0,1361
+Anvers-Est,Belgique,1872,1,28.0,0.0,28,28,1.0,"Ville portuaire, réputée pour ses diamants et sa mode. (quartier-Est)",Europe_Ouest,69.0,1,0,0,0,1542
+Anvers-Nord,Belgique,1404,1,48.0,0.0,48,48,0.0,"Ville portuaire, réputée pour ses diamants et sa mode. (quartier-Nord)",Europe_Ouest,70.0,1,0,0,0,2047
+Ariana,Tunisie,1003,1,60.0,0.0,60,60,0.0,"Ville résidentielle au nord de Tunis, connue pour ses jardins et ses espaces verts.",Maghreb,83.0,0,0,0,0,1786
+Ariana-Est,Tunisie,1705,2,49.0,12.727922061357855,40,58,0.5,"Ville résidentielle au nord de Tunis, connue pour ses jardins et ses espaces verts. (quartier-Est)",Maghreb,98.0,0,0,0,0,1740
+Assouan,Égypte,1098,2,29.5,7.7781745930520225,24,35,0.0,"Ville du sud, connue pour son barrage et ses îles.",Afrique,50.0,0,0,0,0,1174
+Assouan-Est,Égypte,1800,2,45.5,17.67766952966369,33,58,1.0,"Ville du sud, connue pour son barrage et ses îles. (quartier-Est)",Afrique,65.0,0,0,0,0,908
+Assouan-Sud,Égypte,1566,3,25.666666666666668,6.8068592855540455,18,31,0.3333333333333333,"Ville du sud, connue pour son barrage et ses îles. (quartier-Sud)",Afrique,65.0,0,0,0,0,1460
+Athènes,Grèce,1154,1,32.0,0.0,32,32,1.0,"Capitale grecque, connue pour l’Acropole et le Parthénon.",Europe_Sud,57.0,0,1,0,0,1351
+Athènes-Est,Grèce,1856,1,44.0,0.0,44,44,0.0,"Capitale grecque, connue pour l’Acropole et le Parthénon. (quartier-Est)",Europe_Sud,72.0,0,1,0,0,1295
+Athènes-Nord,Grèce,1388,1,43.0,0.0,43,43,0.0,"Capitale grecque, connue pour l’Acropole et le Parthénon. (quartier-Nord)",Europe_Sud,73.0,0,1,0,0,1529
+Athènes-Sud,Grèce,1622,1,27.0,0.0,27,27,0.0,"Capitale grecque, connue pour l’Acropole et le Parthénon. (quartier-Sud)",Europe_Sud,72.0,0,1,0,0,1795
+Auckland,Nouvelle-Zélande,1199,1,30.0,0.0,30,30,0.0,"Ville portuaire, connue pour la Sky Tower et ses plages.",Océanie,56.0,1,0,0,0,1942
+Auckland-Nord,Nouvelle-Zélande,1433,3,39.66666666666666,6.350852961085883,36,47,0.3333333333333333,"Ville portuaire, connue pour la Sky Tower et ses plages. (quartier-Nord)",Océanie,72.0,1,0,0,0,1709
+Auckland-Sud,Nouvelle-Zélande,1667,2,40.0,11.31370849898476,32,48,0.5,"Ville portuaire, connue pour la Sky Tower et ses plages. (quartier-Sud)",Océanie,71.0,1,0,0,0,2367
+Bali,Indonésie,1212,1,52.0,0.0,52,52,1.0,"Île paradisiaque, célèbre pour ses plages et ses temples.",Asie,57.0,1,0,0,0,1856
+Bali-Nord,Indonésie,1446,3,38.333333333333336,13.650396819628844,26,53,0.3333333333333333,"Île paradisiaque, célèbre pour ses plages et ses temples. (quartier-Nord)",Asie,73.0,1,0,0,0,2487
+Bali-Sud,Indonésie,1680,1,56.0,0.0,56,56,1.0,"Île paradisiaque, célèbre pour ses plages et ses temples. (quartier-Sud)",Asie,72.0,1,0,0,0,1882
+Bangalore,Inde,1091,5,39.2,9.984988733093292,28,51,0.6,"Ville technologique, réputée pour ses startups et son climat.",Asie,61.0,1,0,0,0,2485
+Bangalore-Est,Inde,1793,1,20.0,0.0,20,20,1.0,"Ville technologique, réputée pour ses startups et son climat. (quartier-Est)",Asie,76.0,1,0,0,0,1926
+Bangalore-Sud,Inde,1559,1,34.0,0.0,34,34,0.0,"Ville technologique, réputée pour ses startups et son climat. (quartier-Sud)",Asie,76.0,1,0,0,0,1603
+Bangkok-Est,Thaïlande,1909,2,43.0,8.48528137423857,37,49,0.5,"Capitale animée, connue pour ses temples et sa street food. (quartier-Est)",Asie,74.0,0,1,0,0,1771
+Bangkok-Nord,Thaïlande,1441,1,47.0,0.0,47,47,0.0,"Capitale animée, connue pour ses temples et sa street food. (quartier-Nord)",Asie,75.0,0,1,0,0,1354
+Bangkok-Sud,Thaïlande,1675,1,43.0,0.0,43,43,0.0,"Capitale animée, connue pour ses temples et sa street food. (quartier-Sud)",Asie,74.0,0,1,0,0,970
+Barcelone,Espagne,1045,1,42.0,0.0,42,42,0.0,"Ville catalane célèbre pour la Sagrada Família, le parc Güell et ses plages.",Europe_Sud,76.0,1,0,0,0,1844
+Barcelone-Est,Espagne,1747,1,45.0,0.0,45,45,0.0,"Ville catalane célèbre pour la Sagrada Família, le parc Güell et ses plages. (quartier-Est)",Europe_Sud,91.0,1,0,0,0,2328
+Beer-Sheva,Israël,1232,1,21.0,0.0,21,21,0.0,"Ville du désert, connue pour son université et son histoire antique.",Moyen_Orient,68.0,0,0,1,0,1426
+Beer-Sheva-Est,Israël,1934,1,18.0,0.0,18,18,0.0,"Ville du désert, connue pour son université et son histoire antique. (quartier-Est)",Moyen_Orient,83.0,0,0,1,0,950
+Beer-Sheva-Nord,Israël,1466,2,24.5,2.1213203435596424,23,26,0.0,"Ville du désert, connue pour son université et son histoire antique. (quartier-Nord)",Moyen_Orient,84.0,0,0,1,0,1880
+Beer-Sheva-Sud,Israël,1700,2,47.0,11.31370849898476,39,55,1.0,"Ville du désert, connue pour son université et son histoire antique. (quartier-Sud)",Moyen_Orient,83.0,0,0,1,0,1196
+Bergen-Nord,Norvège,1369,1,20.0,0.0,20,20,1.0,"Ville côtière, célèbre pour ses maisons colorées et ses fjords. (quartier-Nord)",Europe_Nord,79.0,1,0,0,0,1663
+Berlin,Allemagne,1049,3,40.333333333333336,19.75685535031659,19,58,0.6666666666666666,"Capitale allemande, connue pour le mur de Berlin et la porte de Brandebourg.",Europe_Ouest,76.0,0,1,0,0,1447
+Berlin-Est,Allemagne,1751,1,24.0,0.0,24,24,1.0,"Capitale allemande, connue pour le mur de Berlin et la porte de Brandebourg. (quartier-Est)",Europe_Ouest,91.0,0,1,0,0,1610
+Berlin-Nord,Allemagne,1283,1,56.0,0.0,56,56,1.0,"Capitale allemande, connue pour le mur de Berlin et la porte de Brandebourg. (quartier-Nord)",Europe_Ouest,92.0,0,1,0,0,1335
+Berlin-Sud,Allemagne,1517,1,33.0,0.0,33,33,1.0,"Capitale allemande, connue pour le mur de Berlin et la porte de Brandebourg. (quartier-Sud)",Europe_Ouest,91.0,0,1,0,0,1023
+Berne-Est,Suisse,1880,1,47.0,0.0,47,47,1.0,"Capitale suisse, réputée pour sa vieille ville et ses ours. (quartier-Est)",Europe_Ouest,74.0,1,1,0,0,1581
+Berne-Nord,Suisse,1412,2,49.5,10.606601717798211,42,57,1.0,"Capitale suisse, réputée pour sa vieille ville et ses ours. (quartier-Nord)",Europe_Ouest,75.0,1,1,0,0,2226
+Bilbao,Espagne,1048,1,52.0,0.0,52,52,1.0,"Ville basque, réputée pour le musée Guggenheim et sa gastronomie.",Europe_Sud,65.0,1,0,0,0,1595
+Bilbao-Est,Espagne,1750,1,33.0,0.0,33,33,0.0,"Ville basque, réputée pour le musée Guggenheim et sa gastronomie. (quartier-Est)",Europe_Sud,80.0,1,0,0,0,1964
+Bizerte,Tunisie,1007,1,20.0,0.0,20,20,1.0,"Ville côtière au nord, connue pour son vieux port pittoresque.",Maghreb,62.0,0,0,0,0,1617
+Bizerte-Est,Tunisie,1709,1,28.0,0.0,28,28,0.0,"Ville côtière au nord, connue pour son vieux port pittoresque. (quartier-Est)",Maghreb,77.0,0,0,0,0,1209
+Bizerte-Nord,Tunisie,1241,1,21.0,0.0,21,21,0.0,"Ville côtière au nord, connue pour son vieux port pittoresque. (quartier-Nord)",Maghreb,78.0,0,0,0,0,971
+Bizerte-Ouest,Tunisie,1943,1,50.0,0.0,50,50,0.0,"Ville côtière au nord, connue pour son vieux port pittoresque. (quartier-Ouest)",Maghreb,79.0,0,0,0,0,1256
+Bizerte-Sud,Tunisie,1475,2,41.0,14.142135623730953,31,51,1.0,"Ville côtière au nord, connue pour son vieux port pittoresque. (quartier-Sud)",Maghreb,77.0,0,0,0,0,1925
+Bordeaux,France,1022,2,40.0,11.31370849898476,32,48,0.0,"Ville du vin, célèbre pour ses quais et son architecture classique.",Europe_Ouest,67.0,1,0,0,0,1824
+Bordeaux-Est,France,1724,2,46.5,0.7071067811865476,46,47,1.0,"Ville du vin, célèbre pour ses quais et son architecture classique. (quartier-Est)",Europe_Ouest,82.0,1,0,0,0,1947
+Bordeaux-Ouest,France,1958,1,18.0,0.0,18,18,0.0,"Ville du vin, célèbre pour ses quais et son architecture classique. (quartier-Ouest)",Europe_Ouest,84.0,1,0,0,0,1948
+Bordeaux-Sud,France,1490,1,59.0,0.0,59,59,0.0,"Ville du vin, célèbre pour ses quais et son architecture classique. (quartier-Sud)",Europe_Ouest,82.0,1,0,0,0,2195
+Braga-Est,Portugal,1865,1,18.0,0.0,18,18,1.0,"Ville historique, réputée pour ses églises et ses jardins. (quartier-Est)",Europe_Sud,73.0,1,0,1,0,2272
+Braga-Nord,Portugal,1397,1,35.0,0.0,35,35,0.0,"Ville historique, réputée pour ses églises et ses jardins. (quartier-Nord)",Europe_Sud,74.0,1,0,1,0,1374
+Braga-Sud,Portugal,1631,2,35.5,3.5355339059327378,33,38,0.0,"Ville historique, réputée pour ses églises et ses jardins. (quartier-Sud)",Europe_Sud,73.0,1,0,1,0,1635
+Brasília,Brésil,1071,1,38.0,0.0,38,38,1.0,"Capitale moderne, réputée pour son architecture futuriste.",Amériques,58.0,1,1,0,1,1260
+Brasília-Nord,Brésil,1305,4,41.5,10.246950765959598,28,52,0.25,"Capitale moderne, réputée pour son architecture futuriste. (quartier-Nord)",Amériques,74.0,1,1,0,1,2571
+Brasília-Sud,Brésil,1539,1,50.0,0.0,50,50,0.0,"Capitale moderne, réputée pour son architecture futuriste. (quartier-Sud)",Amériques,73.0,1,1,0,1,1891
+Brisbane,Australie,1106,1,38.0,0.0,38,38,0.0,"Ville du Queensland, connue pour sa rivière et son climat.",Océanie,58.0,0,0,0,0,1551
+Brisbane-Est,Australie,1808,1,59.0,0.0,59,59,0.0,"Ville du Queensland, connue pour sa rivière et son climat. (quartier-Est)",Océanie,73.0,0,0,0,0,1217
+Brisbane-Nord,Australie,1340,1,38.0,0.0,38,38,0.0,"Ville du Queensland, connue pour sa rivière et son climat. (quartier-Nord)",Océanie,74.0,0,0,0,0,841
+Bristol-Est,Royaume-Uni,1760,2,31.0,0.0,31,31,0.0,"Ville du sud-ouest, connue pour son port et son street art. (quartier-Est)",Europe_Nord,74.0,0,0,0,0,1329
+Bristol-Nord,Royaume-Uni,1292,1,20.0,0.0,20,20,1.0,"Ville du sud-ouest, connue pour son port et son street art. (quartier-Nord)",Europe_Nord,75.0,0,0,0,0,1415
+Brno,Tchéquie,1195,2,43.5,20.50609665440988,29,58,0.5,"Ville universitaire, réputée pour son architecture moderne.",Autre,59.0,1,0,0,1,1395
+Brno-Nord,Tchéquie,1429,2,32.5,14.849242404917495,22,43,0.5,"Ville universitaire, réputée pour son architecture moderne. (quartier-Nord)",Autre,75.0,1,0,0,1,2221
+Bruges,Belgique,1173,2,45.0,2.8284271247461903,43,47,0.0,"Ville médiévale, réputée pour ses canaux et son centre historique.",Europe_Ouest,66.0,1,0,1,0,2181
+Bruges-Nord,Belgique,1407,1,46.0,0.0,46,46,1.0,"Ville médiévale, réputée pour ses canaux et son centre historique. (quartier-Nord)",Europe_Ouest,82.0,1,0,1,0,1896
+Bruges-Sud,Belgique,1641,1,21.0,0.0,21,21,1.0,"Ville médiévale, réputée pour ses canaux et son centre historique. (quartier-Sud)",Europe_Ouest,81.0,1,0,1,0,2112
+Bruxelles,Belgique,1169,1,18.0,0.0,18,18,1.0,"Capitale belge, connue pour la Grand-Place et l’Atomium.",Europe_Ouest,56.0,0,1,0,0,1061
+Bruxelles-Est,Belgique,1871,1,40.0,0.0,40,40,0.0,"Capitale belge, connue pour la Grand-Place et l’Atomium. (quartier-Est)",Europe_Ouest,71.0,0,1,0,0,1539
+Bruxelles-Nord,Belgique,1403,2,43.5,14.849242404917495,33,54,0.0,"Capitale belge, connue pour la Grand-Place et l’Atomium. (quartier-Nord)",Europe_Ouest,72.0,0,1,0,0,1475
+Bruxelles-Sud,Belgique,1637,1,38.0,0.0,38,38,1.0,"Capitale belge, connue pour la Grand-Place et l’Atomium. (quartier-Sud)",Europe_Ouest,71.0,0,1,0,0,971
+Budapest,Hongrie,1189,1,50.0,0.0,50,50,1.0,"Capitale hongroise, connue pour ses bains et son parlement.",Europe_Est,59.0,0,1,0,0,891
+Budapest-Est,Hongrie,1891,2,33.5,6.363961030678928,29,38,0.5,"Capitale hongroise, connue pour ses bains et son parlement. (quartier-Est)",Europe_Est,74.0,0,1,0,0,1897
+Buenos Aires-Est,Argentine,1821,4,42.75,5.439056290693574,35,47,1.0,"Capitale argentine, connue pour le tango et la Plaza de Mayo. (quartier-Est)",Amériques,76.0,0,1,0,0,2155
+Buenos Aires-Nord,Argentine,1353,1,19.0,0.0,19,19,0.0,"Capitale argentine, connue pour le tango et la Plaza de Mayo. (quartier-Nord)",Amériques,77.0,0,1,0,0,1139
+Bursa-Est,Turquie,1805,1,51.0,0.0,51,51,1.0,"Ville historique, connue pour ses bains et sa soie. (quartier-Est)",Moyen_Orient,66.0,0,0,1,0,1622
+Bursa-Nord,Turquie,1337,1,41.0,0.0,41,41,1.0,"Ville historique, connue pour ses bains et sa soie. (quartier-Nord)",Moyen_Orient,67.0,0,0,1,0,1585
+Bursa-Sud,Turquie,1571,2,52.5,0.7071067811865476,52,53,1.0,"Ville historique, connue pour ses bains et sa soie. (quartier-Sud)",Moyen_Orient,66.0,0,0,1,0,1130
+Busan,Corée du Sud,1204,2,48.5,0.7071067811865476,48,49,0.0,"Ville portuaire, réputée pour ses plages et son marché aux poissons.",Asie,68.0,1,0,0,0,1835
+Busan-Est,Corée du Sud,1906,1,22.0,0.0,22,22,0.0,"Ville portuaire, réputée pour ses plages et son marché aux poissons. (quartier-Est)",Asie,83.0,1,0,0,0,1891
+Busan-Nord,Corée du Sud,1438,1,57.0,0.0,57,57,1.0,"Ville portuaire, réputée pour ses plages et son marché aux poissons. (quartier-Nord)",Asie,84.0,1,0,0,0,2166
+Busan-Sud,Corée du Sud,1672,1,54.0,0.0,54,54,1.0,"Ville portuaire, réputée pour ses plages et son marché aux poissons. (quartier-Sud)",Asie,83.0,1,0,0,0,1681
+Bâle,Suisse,1176,1,26.0,0.0,26,26,0.0,"Ville culturelle, réputée pour ses musées et son carnaval.",Europe_Ouest,58.0,1,0,0,0,1881
+Bâle-Nord,Suisse,1410,1,48.0,0.0,48,48,0.0,"Ville culturelle, réputée pour ses musées et son carnaval. (quartier-Nord)",Europe_Ouest,74.0,1,0,0,0,1635
+Bâle-Sud,Suisse,1644,1,20.0,0.0,20,20,0.0,"Ville culturelle, réputée pour ses musées et son carnaval. (quartier-Sud)",Europe_Ouest,73.0,1,0,0,0,2054
+Calgary-Nord,Canada,1301,1,40.0,0.0,40,40,0.0,"Ville de l’Alberta, connue pour le Stampede et ses parcs. (quartier-Nord)",Amériques,73.0,0,0,0,0,1549
+Calgary-Sud,Canada,1535,1,23.0,0.0,23,23,0.0,"Ville de l’Alberta, connue pour le Stampede et ses parcs. (quartier-Sud)",Amériques,72.0,0,0,0,0,1568
+Cancún,Mexique,1117,1,43.0,0.0,43,43,1.0,"Ville balnéaire, célèbre pour ses plages et ses hôtels.",Amériques,55.0,1,0,0,0,1487
+Cancún-Est,Mexique,1819,2,57.5,3.5355339059327378,55,60,0.5,"Ville balnéaire, célèbre pour ses plages et ses hôtels. (quartier-Est)",Amériques,70.0,1,0,0,0,2278
+Cancún-Nord,Mexique,1351,1,55.0,0.0,55,55,1.0,"Ville balnéaire, célèbre pour ses plages et ses hôtels. (quartier-Nord)",Amériques,71.0,1,0,0,0,1362
+Cancún-Sud,Mexique,1585,1,47.0,0.0,47,47,0.0,"Ville balnéaire, célèbre pour ses plages et ses hôtels. (quartier-Sud)",Amériques,70.0,1,0,0,0,2091
+Casablanca,Maroc,1027,2,53.0,8.48528137423857,47,59,0.5,"Ville portuaire moderne, connue pour la mosquée Hassan II et son dynamisme économique.",Maghreb,86.0,0,0,0,1,1981
+Casablanca-Est,Maroc,1729,2,36.5,26.16295090390226,18,55,0.5,"Ville portuaire moderne, connue pour la mosquée Hassan II et son dynamisme économique. (quartier-Est)",Maghreb,101.0,0,0,0,1,1426
+Casablanca-Nord,Maroc,1261,3,34.666666666666664,18.175074506954115,20,55,0.3333333333333333,"Ville portuaire moderne, connue pour la mosquée Hassan II et son dynamisme économique. (quartier-Nord)",Maghreb,102.0,0,0,0,1,2083
+Casablanca-Ouest,Maroc,1963,3,33.333333333333336,9.712534856222309,25,44,1.0,"Ville portuaire moderne, connue pour la mosquée Hassan II et son dynamisme économique. (quartier-Ouest)",Maghreb,103.0,0,0,0,1,1517
+Chengdu-Est,Chine,1785,2,45.5,17.67766952966369,33,58,0.5,"Ville du Sichuan, célèbre pour ses pandas et sa gastronomie. (quartier-Est)",Asie,75.0,1,0,0,0,1829
+Chengdu-Nord,Chine,1317,2,42.0,7.071067811865476,37,47,0.5,"Ville du Sichuan, célèbre pour ses pandas et sa gastronomie. (quartier-Nord)",Asie,76.0,1,0,0,0,1952
+Chengdu-Sud,Chine,1551,1,23.0,0.0,23,23,1.0,"Ville du Sichuan, célèbre pour ses pandas et sa gastronomie. (quartier-Sud)",Asie,75.0,1,0,0,0,1390
+Chennai,Inde,1092,1,57.0,0.0,57,57,0.0,"Ville du sud, connue pour ses plages et ses temples.",Asie,52.0,1,0,0,0,1276
+Chiang Mai,Thaïlande,1208,1,50.0,0.0,50,50,0.0,"Ville du nord, réputée pour ses montagnes et ses marchés.",Asie,57.0,1,0,0,0,1184
+Chiang Mai-Est,Thaïlande,1910,2,53.5,3.5355339059327378,51,56,0.0,"Ville du nord, réputée pour ses montagnes et ses marchés. (quartier-Est)",Asie,72.0,1,0,0,0,2232
+Chiang Mai-Sud,Thaïlande,1676,3,47.66666666666666,5.131601439446884,42,52,0.6666666666666666,"Ville du nord, réputée pour ses montagnes et ses marchés. (quartier-Sud)",Asie,72.0,1,0,0,0,1584
+Chicago,États-Unis,1061,1,29.0,0.0,29,29,0.0,"Ville du Midwest, réputée pour son architecture et son jazz.",Amériques,60.0,1,0,0,0,2056
+Chicago-Nord,États-Unis,1295,1,18.0,0.0,18,18,0.0,"Ville du Midwest, réputée pour son architecture et son jazz. (quartier-Nord)",Amériques,76.0,1,0,0,0,2198
+Chicago-Ouest,États-Unis,1997,2,28.0,11.31370849898476,20,36,0.5,"Ville du Midwest, réputée pour son architecture et son jazz. (quartier-Ouest)",Amériques,77.0,1,0,0,0,1990
+Christchurch-Nord,Nouvelle-Zélande,1435,1,21.0,0.0,21,21,1.0,"Ville du sud, célèbre pour ses jardins et son art urbain. (quartier-Nord)",Océanie,73.0,1,0,0,0,1673
+Christchurch-Sud,Nouvelle-Zélande,1669,1,46.0,0.0,46,46,1.0,"Ville du sud, célèbre pour ses jardins et son art urbain. (quartier-Sud)",Océanie,72.0,1,0,0,0,1448
+Coimbra,Portugal,1161,1,50.0,0.0,50,50,1.0,"Ville universitaire, connue pour sa bibliothèque baroque.",Europe_Sud,57.0,0,0,0,0,1317
+Coimbra-Est,Portugal,1863,1,18.0,0.0,18,18,1.0,"Ville universitaire, connue pour sa bibliothèque baroque. (quartier-Est)",Europe_Sud,72.0,0,0,0,0,1291
+Coimbra-Nord,Portugal,1395,2,47.5,13.435028842544405,38,57,0.5,"Ville universitaire, connue pour sa bibliothèque baroque. (quartier-Nord)",Europe_Sud,73.0,0,0,0,0,992
+Coimbra-Sud,Portugal,1629,1,29.0,0.0,29,29,1.0,"Ville universitaire, connue pour sa bibliothèque baroque. (quartier-Sud)",Europe_Sud,72.0,0,0,0,0,958
+Cologne,Allemagne,1053,2,31.0,1.4142135623730951,30,32,0.5,"Ville rhénane, célèbre pour sa cathédrale et son carnaval.",Europe_Ouest,58.0,1,0,0,0,1778
+Cologne-Est,Allemagne,1755,2,51.0,4.242640687119285,48,54,0.0,"Ville rhénane, célèbre pour sa cathédrale et son carnaval. (quartier-Est)",Europe_Ouest,73.0,1,0,0,0,2022
+Cologne-Nord,Allemagne,1287,2,45.0,12.727922061357855,36,54,1.0,"Ville rhénane, célèbre pour sa cathédrale et son carnaval. (quartier-Nord)",Europe_Ouest,74.0,1,0,0,0,1831
+Cologne-Ouest,Allemagne,1989,1,59.0,0.0,59,59,0.0,"Ville rhénane, célèbre pour sa cathédrale et son carnaval. (quartier-Ouest)",Europe_Ouest,75.0,1,0,0,0,2024
+Cologne-Sud,Allemagne,1521,2,50.5,4.949747468305833,47,54,0.0,"Ville rhénane, célèbre pour sa cathédrale et son carnaval. (quartier-Sud)",Europe_Ouest,73.0,1,0,0,0,1848
+Concepción-Nord,Chili,1360,2,31.5,17.67766952966369,19,44,1.0,"Ville universitaire, réputée pour son ambiance étudiante. (quartier-Nord)",Amériques,73.0,1,0,0,0,1718
+Concepción-Sud,Chili,1594,3,37.0,15.716233645501712,20,51,0.6666666666666666,"Ville universitaire, réputée pour son ambiance étudiante. (quartier-Sud)",Amériques,72.0,1,0,0,0,1898
+Constantine-Nord,Algérie,1270,1,37.0,0.0,37,37,0.0,"Ville des ponts suspendus, célèbre pour ses gorges et son histoire. (quartier-Nord)",Maghreb,83.0,1,0,1,0,2202
+Copenhague,Danemark,1144,2,36.5,23.33452377915607,20,53,0.5,"Capitale danoise, connue pour la Petite Sirène et Tivoli.",Europe_Nord,57.0,0,1,0,0,1259
+Copenhague-Est,Danemark,1846,2,45.5,16.263455967290593,34,57,0.5,"Capitale danoise, connue pour la Petite Sirène et Tivoli. (quartier-Est)",Europe_Nord,72.0,0,1,0,0,1150
+Cork-Est,Irlande,1887,2,36.0,21.213203435596427,21,51,1.0,"Ville portuaire, réputée pour son marché anglais. (quartier-Est)",Europe_Nord,64.0,1,0,0,0,1380
+Cork-Nord,Irlande,1419,1,54.0,0.0,54,54,0.0,"Ville portuaire, réputée pour son marché anglais. (quartier-Nord)",Europe_Nord,65.0,1,0,0,0,1277
+Cork-Sud,Irlande,1653,2,41.5,12.020815280171307,33,50,0.0,"Ville portuaire, réputée pour son marché anglais. (quartier-Sud)",Europe_Nord,64.0,1,0,0,0,1474
+Cracovie,Pologne,1150,1,52.0,0.0,52,52,0.0,"Ville historique, célèbre pour la place du marché et le château du Wawel.",Europe_Est,73.0,1,0,1,0,1530
+Cracovie-Nord,Pologne,1384,2,35.5,3.5355339059327378,33,38,1.0,"Ville historique, célèbre pour la place du marché et le château du Wawel. (quartier-Nord)",Europe_Est,89.0,1,0,1,0,2429
+Cracovie-Sud,Pologne,1618,1,54.0,0.0,54,54,1.0,"Ville historique, célèbre pour la place du marché et le château du Wawel. (quartier-Sud)",Europe_Est,88.0,1,0,1,0,2259
+Córdoba-Est,Argentine,1822,2,34.0,2.8284271247461903,32,36,0.0,"Ville universitaire, réputée pour son ambiance jeune. (quartier-Est)",Amériques,68.0,1,0,0,0,2309
+Córdoba-Sud,Argentine,1588,1,55.0,0.0,55,55,0.0,"Ville universitaire, réputée pour son ambiance jeune. (quartier-Sud)",Amériques,68.0,1,0,0,0,1312
+Daegu,Corée du Sud,1206,1,41.0,0.0,41,41,0.0,"Ville industrielle, célèbre pour ses festivals et son textile.",Asie,62.0,1,0,0,0,1267
+Daegu-Sud,Corée du Sud,1674,1,50.0,0.0,50,50,0.0,"Ville industrielle, célèbre pour ses festivals et son textile. (quartier-Sud)",Asie,77.0,1,0,0,0,1872
+Debrecen-Est,Hongrie,1892,1,45.0,0.0,45,45,0.0,"Ville universitaire, réputée pour son carnaval des fleurs. (quartier-Est)",Europe_Est,73.0,1,0,0,0,1736
+Debrecen-Nord,Hongrie,1424,2,32.5,13.435028842544405,23,42,0.0,"Ville universitaire, réputée pour son carnaval des fleurs. (quartier-Nord)",Europe_Est,74.0,1,0,0,0,2013
+Delhi-Sud,Inde,1557,1,20.0,0.0,20,20,1.0,"Capitale indienne, connue pour le Fort Rouge et la Porte de l’Inde. (quartier-Sud)",Asie,82.0,0,1,0,0,1647
+Djeddah-Est,Arabie Saoudite,1928,1,56.0,0.0,56,56,0.0,"Ville portuaire, réputée pour sa corniche et ses sculptures. (quartier-Est)",Moyen_Orient,75.0,1,0,0,0,2154
+Djeddah-Sud,Arabie Saoudite,1694,2,26.0,5.656854249492381,22,30,0.5,"Ville portuaire, réputée pour sa corniche et ses sculptures. (quartier-Sud)",Moyen_Orient,75.0,1,0,0,0,1548
+Djerba,Tunisie,1004,1,45.0,0.0,45,45,1.0,"Île touristique réputée pour ses plages, ses souks et la synagogue de la Ghriba.",Maghreb,80.0,1,0,0,0,2083
+Djerba-Est,Tunisie,1706,2,30.0,16.97056274847714,18,42,0.0,"Île touristique réputée pour ses plages, ses souks et la synagogue de la Ghriba. (quartier-Est)",Maghreb,95.0,1,0,0,0,2521
+Djerba-Nord,Tunisie,1238,1,48.0,0.0,48,48,1.0,"Île touristique réputée pour ses plages, ses souks et la synagogue de la Ghriba. (quartier-Nord)",Maghreb,96.0,1,0,0,0,2285
+Djerba-Ouest,Tunisie,1940,4,44.5,14.059397805975427,24,56,0.25,"Île touristique réputée pour ses plages, ses souks et la synagogue de la Ghriba. (quartier-Ouest)",Maghreb,97.0,1,0,0,0,2856
+Djerba-Sud,Tunisie,1472,3,31.666666666666668,14.153915830374764,23,48,0.3333333333333333,"Île touristique réputée pour ses plages, ses souks et la synagogue de la Ghriba. (quartier-Sud)",Maghreb,95.0,1,0,0,0,2296
+Dubaï-Est,Émirats arabes unis,1935,2,33.0,4.242640687119285,30,36,1.0,"Ville futuriste, célèbre pour le Burj Khalifa et ses malls. (quartier-Est)",Moyen_Orient,74.0,1,0,0,1,2400
+Dubaï-Nord,Émirats arabes unis,1467,1,56.0,0.0,56,56,0.0,"Ville futuriste, célèbre pour le Burj Khalifa et ses malls. (quartier-Nord)",Moyen_Orient,75.0,1,0,0,1,2088
+Dublin,Irlande,1184,1,41.0,0.0,41,41,0.0,"Capitale irlandaise, connue pour le Trinity College et la Guinness.",Europe_Nord,67.0,0,1,0,0,1382
+Dublin-Est,Irlande,1886,1,56.0,0.0,56,56,0.0,"Capitale irlandaise, connue pour le Trinity College et la Guinness. (quartier-Est)",Europe_Nord,82.0,0,1,0,0,1862
+Dublin-Nord,Irlande,1418,1,46.0,0.0,46,46,0.0,"Capitale irlandaise, connue pour le Trinity College et la Guinness. (quartier-Nord)",Europe_Nord,83.0,0,1,0,0,1391
+Dublin-Sud,Irlande,1652,1,57.0,0.0,57,57,0.0,"Capitale irlandaise, connue pour le Trinity College et la Guinness. (quartier-Sud)",Europe_Nord,82.0,0,1,0,0,1562
+Durban,Afrique du Sud,1111,2,20.5,3.5355339059327378,18,23,0.5,"Ville balnéaire, réputée pour ses plages et son port.",Afrique,53.0,1,0,0,0,1998
+Durban-Est,Afrique du Sud,1813,2,25.5,4.949747468305833,22,29,0.5,"Ville balnéaire, réputée pour ses plages et son port. (quartier-Est)",Afrique,68.0,1,0,0,0,1384
+Durban-Sud,Afrique du Sud,1579,2,46.5,17.67766952966369,34,59,0.5,"Ville balnéaire, réputée pour ses plages et son port. (quartier-Sud)",Afrique,68.0,1,0,0,0,1597
+Edimbourg,Royaume-Uni,1057,2,38.5,7.7781745930520225,33,44,0.5,"Ville écossaise, réputée pour son château et son festival.",Europe_Nord,58.0,1,0,1,0,1782
+Edimbourg-Est,Royaume-Uni,1759,3,40.0,7.54983443527075,32,47,0.3333333333333333,"Ville écossaise, réputée pour son château et son festival. (quartier-Est)",Europe_Nord,73.0,1,0,1,0,2296
+Edimbourg-Nord,Royaume-Uni,1291,3,41.333333333333336,16.072751268321593,23,53,0.3333333333333333,"Ville écossaise, réputée pour son château et son festival. (quartier-Nord)",Europe_Nord,74.0,1,0,1,0,1937
+Eindhoven-Nord,Pays-Bas,1402,2,38.5,16.263455967290593,27,50,0.5,"Ville technologique, connue pour Philips et le design. (quartier-Nord)",Europe_Ouest,70.0,0,0,0,0,1770
+Eindhoven-Sud,Pays-Bas,1636,1,20.0,0.0,20,20,1.0,"Ville technologique, connue pour Philips et le design. (quartier-Sud)",Europe_Ouest,69.0,0,0,0,0,1584
+Ekaterinbourg-Est,Russie,1779,1,58.0,0.0,58,58,0.0,Ville industrielle de l’Oural. (quartier-Est),Europe_Est,45.0,0,0,0,0,942
+Ekaterinbourg-Nord,Russie,1311,1,19.0,0.0,19,19,1.0,Ville industrielle de l’Oural. (quartier-Nord),Europe_Est,46.0,0,0,0,0,766
+Ekaterinbourg-Sud,Russie,1545,1,46.0,0.0,46,46,0.0,Ville industrielle de l’Oural. (quartier-Sud),Europe_Est,45.0,0,0,0,0,564
+El Kef,Tunisie,1016,2,41.5,3.5355339059327378,39,44,0.5,"Ville perchée sur les montagnes, connue pour sa kasbah et ses sites archéologiques.",Maghreb,83.0,0,0,0,0,1887
+El Kef-Est,Tunisie,1718,1,52.0,0.0,52,52,0.0,"Ville perchée sur les montagnes, connue pour sa kasbah et ses sites archéologiques. (quartier-Est)",Maghreb,98.0,0,0,0,0,1633
+El Kef-Nord,Tunisie,1250,1,58.0,0.0,58,58,1.0,"Ville perchée sur les montagnes, connue pour sa kasbah et ses sites archéologiques. (quartier-Nord)",Maghreb,99.0,0,0,0,0,1981
+El Kef-Sud,Tunisie,1484,3,38.66666666666666,18.33939293797189,18,53,0.6666666666666666,"Ville perchée sur les montagnes, connue pour sa kasbah et ses sites archéologiques. (quartier-Sud)",Maghreb,98.0,0,0,0,0,1740
+Eldoret-Sud,Kenya,1690,1,49.0,0.0,49,49,0.0,"Ville sportive, célèbre pour ses coureurs de fond. (quartier-Sud)",Afrique,65.0,1,0,0,0,1940
+Esbjerg,Danemark,1148,1,22.0,0.0,22,22,1.0,"Ville portuaire, réputée pour ses sculptures et son énergie.",Europe_Nord,60.0,1,0,0,0,1774
+Esbjerg-Est,Danemark,1850,1,24.0,0.0,24,24,0.0,"Ville portuaire, réputée pour ses sculptures et son énergie. (quartier-Est)",Europe_Nord,75.0,1,0,0,0,2213
+Esbjerg-Nord,Danemark,1382,2,44.5,0.7071067811865476,44,45,0.5,"Ville portuaire, réputée pour ses sculptures et son énergie. (quartier-Nord)",Europe_Nord,76.0,1,0,0,0,2202
+Espoo,Finlande,1140,1,50.0,0.0,50,50,0.0,"Ville technologique, réputée pour ses entreprises innovantes.",Europe_Nord,61.0,1,0,0,0,1450
+Espoo-Est,Finlande,1842,1,22.0,0.0,22,22,1.0,"Ville technologique, réputée pour ses entreprises innovantes. (quartier-Est)",Europe_Nord,76.0,1,0,0,0,1923
+Espoo-Nord,Finlande,1374,1,18.0,0.0,18,18,0.0,"Ville technologique, réputée pour ses entreprises innovantes. (quartier-Nord)",Europe_Nord,77.0,1,0,0,0,1465
+Espoo-Sud,Finlande,1608,4,48.0,10.954451150103322,32,56,0.25,"Ville technologique, réputée pour ses entreprises innovantes. (quartier-Sud)",Europe_Nord,76.0,1,0,0,0,2559
+Essaouira-Nord,Maroc,1457,1,24.0,0.0,24,24,0.0,"Ville côtière, réputée pour sa médina et ses festivals de musique. (quartier-Nord)",Maghreb,82.0,1,0,1,0,2153
+Faro,Portugal,1162,1,32.0,0.0,32,32,0.0,"Ville de l’Algarve, célèbre pour ses plages et sa vieille ville.",Europe_Sud,64.0,1,0,0,0,1724
+Faro-Est,Portugal,1864,1,56.0,0.0,56,56,0.0,"Ville de l’Algarve, célèbre pour ses plages et sa vieille ville. (quartier-Est)",Europe_Sud,79.0,1,0,0,0,1796
+Faro-Nord,Portugal,1396,2,45.5,14.849242404917495,35,56,0.5,"Ville de l’Algarve, célèbre pour ses plages et sa vieille ville. (quartier-Nord)",Europe_Sud,80.0,1,0,0,0,1730
+Faro-Sud,Portugal,1630,1,46.0,0.0,46,46,0.0,"Ville de l’Algarve, célèbre pour ses plages et sa vieille ville. (quartier-Sud)",Europe_Sud,79.0,1,0,0,0,2138
+Florence,Italie,1042,1,19.0,0.0,19,19,0.0,"Ville d’art, célèbre pour le Duomo et la galerie des Offices.",Europe_Sud,61.0,1,0,0,0,1864
+Florence-Nord,Italie,1276,1,57.0,0.0,57,57,1.0,"Ville d’art, célèbre pour le Duomo et la galerie des Offices. (quartier-Nord)",Europe_Sud,77.0,1,0,0,0,1540
+Florence-Ouest,Italie,1978,2,31.5,9.192388155425116,25,38,0.0,"Ville d’art, célèbre pour le Duomo et la galerie des Offices. (quartier-Ouest)",Europe_Sud,78.0,1,0,0,0,2020
+Fortaleza,Brésil,1073,2,49.5,9.192388155425116,43,56,0.5,"Ville balnéaire, connue pour ses plages et son climat tropical.",Amériques,63.0,1,0,0,0,1365
+Fortaleza-Nord,Brésil,1307,1,52.0,0.0,52,52,1.0,"Ville balnéaire, connue pour ses plages et son climat tropical. (quartier-Nord)",Amériques,79.0,1,0,0,0,1914
+Francfort,Allemagne,1051,2,43.5,4.949747468305833,40,47,0.5,"Ville financière, réputée pour ses gratte-ciel et son aéroport.",Europe_Ouest,63.0,1,0,0,1,1489
+Francfort-Ouest,Allemagne,1987,3,30.0,12.288205727444508,21,44,0.3333333333333333,"Ville financière, réputée pour ses gratte-ciel et son aéroport. (quartier-Ouest)",Europe_Ouest,80.0,1,0,0,1,2438
+Fès,Maroc,1030,1,38.0,0.0,38,38,1.0,"Ville impériale, réputée pour sa médina et ses tanneries.",Maghreb,57.0,1,0,1,0,1868
+Fès-Est,Maroc,1732,1,43.0,0.0,43,43,0.0,"Ville impériale, réputée pour sa médina et ses tanneries. (quartier-Est)",Maghreb,72.0,1,0,1,0,1562
+Fès-Nord,Maroc,1264,1,32.0,0.0,32,32,0.0,"Ville impériale, réputée pour sa médina et ses tanneries. (quartier-Nord)",Maghreb,73.0,1,0,1,0,1415
+Fès-Ouest,Maroc,1966,1,24.0,0.0,24,24,1.0,"Ville impériale, réputée pour sa médina et ses tanneries. (quartier-Ouest)",Maghreb,74.0,1,0,1,0,2135
+Fès-Sud,Maroc,1498,2,23.5,7.7781745930520225,18,29,0.5,"Ville impériale, réputée pour sa médina et ses tanneries. (quartier-Sud)",Maghreb,72.0,1,0,1,0,1997
+Gabès,Tunisie,1008,2,26.5,0.7071067811865476,26,27,0.5,"Ville oasis du sud, réputée pour ses palmeraies et son marché aux épices.",Maghreb,73.0,1,0,0,0,2111
+Gabès-Est,Tunisie,1710,1,29.0,0.0,29,29,0.0,"Ville oasis du sud, réputée pour ses palmeraies et son marché aux épices. (quartier-Est)",Maghreb,88.0,1,0,0,0,2036
+Gabès-Sud,Tunisie,1476,1,21.0,0.0,21,21,1.0,"Ville oasis du sud, réputée pour ses palmeraies et son marché aux épices. (quartier-Sud)",Maghreb,88.0,1,0,0,0,2053
+Galway,Irlande,1186,2,35.0,21.213203435596427,20,50,0.5,"Ville de l’ouest, célèbre pour ses festivals et sa musique.",Europe_Nord,59.0,1,0,0,0,2242
+Galway-Est,Irlande,1888,1,59.0,0.0,59,59,1.0,"Ville de l’ouest, célèbre pour ses festivals et sa musique. (quartier-Est)",Europe_Nord,74.0,1,0,0,0,1985
+Galway-Nord,Irlande,1420,1,48.0,0.0,48,48,1.0,"Ville de l’ouest, célèbre pour ses festivals et sa musique. (quartier-Nord)",Europe_Nord,75.0,1,0,0,0,2145
+Gand,Belgique,1171,1,50.0,0.0,50,50,1.0,"Ville historique, célèbre pour ses canaux et son château.",Europe_Ouest,57.0,1,0,1,0,1197
+Gand-Est,Belgique,1873,1,39.0,0.0,39,39,1.0,"Ville historique, célèbre pour ses canaux et son château. (quartier-Est)",Europe_Ouest,72.0,1,0,1,0,1939
+Gand-Nord,Belgique,1405,2,22.0,2.8284271247461903,20,24,0.5,"Ville historique, célèbre pour ses canaux et son château. (quartier-Nord)",Europe_Ouest,73.0,1,0,1,0,1985
+Gand-Sud,Belgique,1639,1,36.0,0.0,36,36,1.0,"Ville historique, célèbre pour ses canaux et son château. (quartier-Sud)",Europe_Ouest,72.0,1,0,1,0,1659
+Gdansk,Pologne,1151,1,19.0,0.0,19,19,1.0,"Ville portuaire, réputée pour son histoire et son architecture.",Europe_Est,63.0,1,0,1,0,2027
+Gdansk-Nord,Pologne,1385,1,57.0,0.0,57,57,1.0,"Ville portuaire, réputée pour son histoire et son architecture. (quartier-Nord)",Europe_Est,79.0,1,0,1,0,2347
+Gdansk-Sud,Pologne,1619,2,47.5,17.67766952966369,35,60,1.0,"Ville portuaire, réputée pour son histoire et son architecture. (quartier-Sud)",Europe_Est,78.0,1,0,1,0,1810
+Genève,Suisse,1175,1,29.0,0.0,29,29,0.0,"Ville internationale, célèbre pour l’ONU et le jet d’eau.",Europe_Ouest,57.0,1,0,0,0,1809
+Gizeh-Sud,Égypte,1564,1,26.0,0.0,26,26,1.0,"Ville des pyramides, réputée pour le Sphinx. (quartier-Sud)",Afrique,59.0,1,0,0,0,1695
+Graz,Autriche,1182,1,35.0,0.0,35,35,0.0,"Ville universitaire, connue pour son architecture moderne.",Europe_Ouest,58.0,0,0,0,1,1027
+Graz-Est,Autriche,1884,1,37.0,0.0,37,37,1.0,"Ville universitaire, connue pour son architecture moderne. (quartier-Est)",Europe_Ouest,73.0,0,0,0,1,1302
+Graz-Nord,Autriche,1416,1,43.0,0.0,43,43,1.0,"Ville universitaire, connue pour son architecture moderne. (quartier-Nord)",Europe_Ouest,74.0,0,0,0,1,1070
+Graz-Sud,Autriche,1650,2,30.0,1.4142135623730951,29,31,1.0,"Ville universitaire, connue pour son architecture moderne. (quartier-Sud)",Europe_Ouest,73.0,0,0,0,1,1119
+Guadalajara,Mexique,1115,1,38.0,0.0,38,38,0.0,"Ville du Jalisco, réputée pour le mariachi et la tequila.",Amériques,57.0,1,0,0,0,1394
+Guadalajara-Nord,Mexique,1349,1,37.0,0.0,37,37,0.0,"Ville du Jalisco, réputée pour le mariachi et la tequila. (quartier-Nord)",Amériques,73.0,1,0,0,0,1714
+Guadalajara-Sud,Mexique,1583,1,22.0,0.0,22,22,1.0,"Ville du Jalisco, réputée pour le mariachi et la tequila. (quartier-Sud)",Amériques,72.0,1,0,0,0,1696
+Guangzhou,Chine,1081,2,43.0,19.79898987322333,29,57,1.0,"Ville du sud, réputée pour sa cuisine et son commerce.",Asie,54.0,1,0,0,0,1522
+Guangzhou-Est,Chine,1783,1,59.0,0.0,59,59,1.0,"Ville du sud, réputée pour sa cuisine et son commerce. (quartier-Est)",Asie,69.0,1,0,0,0,2247
+Guangzhou-Nord,Chine,1315,2,30.5,17.67766952966369,18,43,1.0,"Ville du sud, réputée pour sa cuisine et son commerce. (quartier-Nord)",Asie,70.0,1,0,0,0,2032
+Guangzhou-Sud,Chine,1549,1,55.0,0.0,55,55,1.0,"Ville du sud, réputée pour sa cuisine et son commerce. (quartier-Sud)",Asie,69.0,1,0,0,0,1917
+Göteborg-Est,Suède,1832,1,50.0,0.0,50,50,0.0,"Ville portuaire, réputée pour ses musées et son ambiance détendue. (quartier-Est)",Europe_Nord,81.0,1,0,0,0,2382
+Göteborg-Nord,Suède,1364,2,58.5,2.1213203435596424,57,60,0.5,"Ville portuaire, réputée pour ses musées et son ambiance détendue. (quartier-Nord)",Europe_Nord,82.0,1,0,0,0,2264
+Göteborg-Sud,Suède,1598,1,23.0,0.0,23,23,0.0,"Ville portuaire, réputée pour ses musées et son ambiance détendue. (quartier-Sud)",Europe_Nord,81.0,1,0,0,0,1668
+Hambourg,Allemagne,1052,1,26.0,0.0,26,26,1.0,"Ville portuaire, connue pour son port et ses entrepôts.",Europe_Ouest,55.0,0,0,0,0,1008
+Hambourg-Est,Allemagne,1754,3,41.0,12.767145334803704,30,55,1.0,"Ville portuaire, connue pour son port et ses entrepôts. (quartier-Est)",Europe_Ouest,70.0,0,0,0,0,1709
+Hambourg-Sud,Allemagne,1520,1,38.0,0.0,38,38,0.0,"Ville portuaire, connue pour son port et ses entrepôts. (quartier-Sud)",Europe_Ouest,70.0,0,0,0,0,1255
+Hammamet,Tunisie,1015,2,37.5,20.50609665440988,23,52,0.0,"Station balnéaire prisée, célèbre pour ses plages et sa médina fleurie.",Maghreb,71.0,1,0,1,0,1820
+Hammamet-Est,Tunisie,1717,4,38.75,14.407752542757436,22,57,0.75,"Station balnéaire prisée, célèbre pour ses plages et sa médina fleurie. (quartier-Est)",Maghreb,86.0,1,0,1,0,2408
+Hammamet-Nord,Tunisie,1249,2,40.5,7.7781745930520225,35,46,0.5,"Station balnéaire prisée, célèbre pour ses plages et sa médina fleurie. (quartier-Nord)",Maghreb,87.0,1,0,1,0,1887
+Hammamet-Ouest,Tunisie,1951,3,31.0,6.557438524302,25,38,0.6666666666666666,"Station balnéaire prisée, célèbre pour ses plages et sa médina fleurie. (quartier-Ouest)",Maghreb,88.0,1,0,1,0,2356
+Hammamet-Sud,Tunisie,1483,1,37.0,0.0,37,37,0.0,"Station balnéaire prisée, célèbre pour ses plages et sa médina fleurie. (quartier-Sud)",Maghreb,86.0,1,0,1,0,1684
+Haïfa-Est,Israël,1933,3,42.333333333333336,4.041451884327381,40,47,0.6666666666666666,"Ville portuaire, célèbre pour ses jardins Bahá’í. (quartier-Est)",Moyen_Orient,64.0,1,0,0,0,2258
+Haïfa-Nord,Israël,1465,2,37.5,3.5355339059327378,35,40,0.5,"Ville portuaire, célèbre pour ses jardins Bahá’í. (quartier-Nord)",Moyen_Orient,65.0,1,0,0,0,1583
+Haïfa-Sud,Israël,1699,2,53.0,5.656854249492381,49,57,1.0,"Ville portuaire, célèbre pour ses jardins Bahá’í. (quartier-Sud)",Moyen_Orient,64.0,1,0,0,0,2023
+Helsinki,Finlande,1139,1,40.0,0.0,40,40,1.0,"Capitale finlandaise, connue pour sa mer et son design.",Europe_Nord,55.0,0,1,0,0,1313
+Helsinki-Est,Finlande,1841,1,25.0,0.0,25,25,0.0,"Capitale finlandaise, connue pour sa mer et son design. (quartier-Est)",Europe_Nord,70.0,0,1,0,0,1774
+Helsinki-Nord,Finlande,1373,1,20.0,0.0,20,20,1.0,"Capitale finlandaise, connue pour sa mer et son design. (quartier-Nord)",Europe_Nord,71.0,0,1,0,0,1636
+Hyderabad,Inde,1093,1,50.0,0.0,50,50,0.0,"Ville historique, célèbre pour le Charminar et sa cuisine.",Asie,58.0,1,0,1,0,1553
+Hyderabad-Est,Inde,1795,2,49.0,0.0,49,49,0.0,"Ville historique, célèbre pour le Charminar et sa cuisine. (quartier-Est)",Asie,73.0,1,0,1,0,2101
+Hyderabad-Nord,Inde,1327,1,31.0,0.0,31,31,0.0,"Ville historique, célèbre pour le Charminar et sa cuisine. (quartier-Nord)",Asie,74.0,1,0,1,0,1947
+Hyderabad-Sud,Inde,1561,1,41.0,0.0,41,41,1.0,"Ville historique, célèbre pour le Charminar et sa cuisine. (quartier-Sud)",Asie,73.0,1,0,1,0,1801
+Héraklion-Nord,Grèce,1391,4,51.5,5.259911279353167,47,59,1.0,"Ville crétoise, célèbre pour le palais de Knossos. (quartier-Nord)",Europe_Sud,66.0,1,0,0,0,1792
+Héraklion-Sud,Grèce,1625,1,35.0,0.0,35,35,1.0,"Ville crétoise, célèbre pour le palais de Knossos. (quartier-Sud)",Europe_Sud,65.0,1,0,0,0,1941
+Ibadan,Nigeria,1218,1,29.0,0.0,29,29,1.0,"Ville universitaire, connue pour ses collines et son histoire.",Afrique,62.0,0,0,1,0,832
+Ibadan-Sud,Nigeria,1686,2,37.5,3.5355339059327378,35,40,0.5,"Ville universitaire, connue pour ses collines et son histoire. (quartier-Sud)",Afrique,77.0,0,0,1,0,1799
+Incheon,Corée du Sud,1205,1,55.0,0.0,55,55,1.0,"Ville aéroportuaire, connue pour son port et son Chinatown.",Asie,59.0,0,0,0,0,1186
+Incheon-Sud,Corée du Sud,1673,2,30.5,17.67766952966369,18,43,0.5,"Ville aéroportuaire, connue pour son port et son Chinatown. (quartier-Sud)",Asie,74.0,0,0,0,0,1381
+Innsbruck,Autriche,1181,1,34.0,0.0,34,34,0.0,"Ville alpine, réputée pour ses sports d’hiver.",Europe_Ouest,46.0,1,0,0,0,1623
+Innsbruck-Est,Autriche,1883,1,38.0,0.0,38,38,1.0,"Ville alpine, réputée pour ses sports d’hiver. (quartier-Est)",Europe_Ouest,61.0,1,0,0,0,1477
+Innsbruck-Nord,Autriche,1415,1,44.0,0.0,44,44,0.0,"Ville alpine, réputée pour ses sports d’hiver. (quartier-Nord)",Europe_Ouest,62.0,1,0,0,0,1729
+Innsbruck-Sud,Autriche,1649,3,27.0,5.5677643628300215,22,33,0.3333333333333333,"Ville alpine, réputée pour ses sports d’hiver. (quartier-Sud)",Europe_Ouest,61.0,1,0,0,0,2216
+Istanbul,Turquie,1099,1,21.0,0.0,21,21,1.0,"Ville transcontinentale, célèbre pour la mosquée Sainte-Sophie et le Bosphore.",Moyen_Orient,78.0,1,0,0,0,1765
+Istanbul-Est,Turquie,1801,2,39.0,24.04163056034261,22,56,0.5,"Ville transcontinentale, célèbre pour la mosquée Sainte-Sophie et le Bosphore. (quartier-Est)",Moyen_Orient,93.0,1,0,0,0,2016
+Istanbul-Nord,Turquie,1333,1,33.0,0.0,33,33,1.0,"Ville transcontinentale, célèbre pour la mosquée Sainte-Sophie et le Bosphore. (quartier-Nord)",Moyen_Orient,94.0,1,0,0,0,1652
+Izmir,Turquie,1101,2,34.5,9.192388155425116,28,41,1.0,"Ville portuaire, réputée pour sa corniche et ses foires.",Moyen_Orient,56.0,1,0,0,0,1872
+Izmir-Nord,Turquie,1335,1,24.0,0.0,24,24,0.0,"Ville portuaire, réputée pour sa corniche et ses foires. (quartier-Nord)",Moyen_Orient,72.0,1,0,0,0,1944
+Jakarta,Indonésie,1211,2,46.0,16.97056274847714,34,58,1.0,"Capitale, connue pour ses gratte-ciel et sa diversité culturelle.",Asie,65.0,0,1,0,1,1801
+Jakarta-Nord,Indonésie,1445,1,39.0,0.0,39,39,0.0,"Capitale, connue pour ses gratte-ciel et sa diversité culturelle. (quartier-Nord)",Asie,81.0,0,1,0,1,990
+Jakarta-Sud,Indonésie,1679,2,38.5,14.849242404917495,28,49,0.0,"Capitale, connue pour ses gratte-ciel et sa diversité culturelle. (quartier-Sud)",Asie,80.0,0,1,0,1,1698
+Johannesburg,Afrique du Sud,1110,1,39.0,0.0,39,39,0.0,"Ville économique, connue pour son histoire minière.",Afrique,51.0,0,0,1,0,722
+Johannesburg-Est,Afrique du Sud,1812,2,43.0,7.071067811865476,38,48,0.5,"Ville économique, connue pour son histoire minière. (quartier-Est)",Afrique,66.0,0,0,1,0,861
+Johannesburg-Nord,Afrique du Sud,1344,1,44.0,0.0,44,44,1.0,"Ville économique, connue pour son histoire minière. (quartier-Nord)",Afrique,67.0,0,0,1,0,1411
+Jérusalem,Israël,1229,3,44.333333333333336,13.316656236958789,29,53,0.6666666666666666,"Ville historique, connue pour ses lieux saints et sa vieille ville.",Moyen_Orient,67.0,0,0,1,0,1189
+Jérusalem-Est,Israël,1931,1,38.0,0.0,38,38,0.0,"Ville historique, connue pour ses lieux saints et sa vieille ville. (quartier-Est)",Moyen_Orient,82.0,0,0,1,0,1485
+Jérusalem-Sud,Israël,1697,2,51.5,9.192388155425116,45,58,0.0,"Ville historique, connue pour ses lieux saints et sa vieille ville. (quartier-Sud)",Moyen_Orient,82.0,0,0,1,0,1874
+Kairouan-Nord,Tunisie,1243,1,59.0,0.0,59,59,1.0,"Ville sainte de l’islam, célèbre pour sa grande mosquée et ses tapis artisanaux. (quartier-Nord)",Maghreb,96.0,1,0,0,0,2556
+Kairouan-Ouest,Tunisie,1945,1,57.0,0.0,57,57,1.0,"Ville sainte de l’islam, célèbre pour sa grande mosquée et ses tapis artisanaux. (quartier-Ouest)",Maghreb,97.0,1,0,0,0,2305
+Kano-Est,Nigeria,1919,1,25.0,0.0,25,25,0.0,"Ville historique, célèbre pour son marché et sa culture haoussa. (quartier-Est)",Afrique,79.0,1,0,1,0,1614
+Kano-Nord,Nigeria,1451,2,47.5,6.363961030678928,43,52,0.5,"Ville historique, célèbre pour son marché et sa culture haoussa. (quartier-Nord)",Afrique,80.0,1,0,1,0,1884
+Kano-Sud,Nigeria,1685,1,37.0,0.0,37,37,1.0,"Ville historique, célèbre pour son marché et sa culture haoussa. (quartier-Sud)",Afrique,79.0,1,0,1,0,1792
+Kazan,Russie,1078,2,46.0,0.0,46,46,0.5,"Ville du Tatarstan, connue pour son kremlin et sa diversité culturelle.",Europe_Est,71.0,0,0,0,0,1547
+Kazan-Est,Russie,1780,1,20.0,0.0,20,20,0.0,"Ville du Tatarstan, connue pour son kremlin et sa diversité culturelle. (quartier-Est)",Europe_Est,86.0,0,0,0,0,1089
+Kazan-Sud,Russie,1546,1,38.0,0.0,38,38,1.0,"Ville du Tatarstan, connue pour son kremlin et sa diversité culturelle. (quartier-Sud)",Europe_Est,86.0,0,0,0,0,1012
+Kisumu,Kenya,1221,3,47.333333333333336,11.590225767142474,34,55,0.6666666666666666,"Ville du lac Victoria, connue pour sa pêche et ses marchés.",Afrique,59.0,0,0,0,0,1573
+Kisumu-Est,Kenya,1923,2,42.0,5.656854249492381,38,46,0.5,"Ville du lac Victoria, connue pour sa pêche et ses marchés. (quartier-Est)",Afrique,74.0,0,0,0,0,1669
+Kisumu-Nord,Kenya,1455,1,32.0,0.0,32,32,1.0,"Ville du lac Victoria, connue pour sa pêche et ses marchés. (quartier-Nord)",Afrique,75.0,0,0,0,0,1521
+Kyoto-Est,Japon,1788,1,24.0,0.0,24,24,0.0,"Ville historique, célèbre pour ses temples et ses jardins. (quartier-Est)",Asie,73.0,1,0,1,0,2039
+Kyoto-Nord,Japon,1320,3,44.66666666666666,10.115993936995675,33,51,1.0,"Ville historique, célèbre pour ses temples et ses jardins. (quartier-Nord)",Asie,74.0,1,0,1,0,1955
+Kyoto-Sud,Japon,1554,1,60.0,0.0,60,60,1.0,"Ville historique, célèbre pour ses temples et ses jardins. (quartier-Sud)",Asie,73.0,1,0,1,0,1576
+La Haye,Pays-Bas,1166,3,43.0,4.58257569495584,38,47,0.3333333333333333,"Ville politique, connue pour le Palais de la Paix.",Europe_Ouest,50.0,0,0,0,0,1635
+La Haye-Est,Pays-Bas,1868,1,27.0,0.0,27,27,1.0,"Ville politique, connue pour le Palais de la Paix. (quartier-Est)",Europe_Ouest,65.0,0,0,0,0,1188
+La Haye-Sud,Pays-Bas,1634,1,60.0,0.0,60,60,0.0,"Ville politique, connue pour le Palais de la Paix. (quartier-Sud)",Europe_Ouest,65.0,0,0,0,0,952
+La Mecque,Arabie Saoudite,1227,1,42.0,0.0,42,42,1.0,"Ville sainte, célèbre pour la Kaaba et le pèlerinage.",Moyen_Orient,53.0,1,0,0,0,1313
+La Mecque-Est,Arabie Saoudite,1929,1,52.0,0.0,52,52,1.0,"Ville sainte, célèbre pour la Kaaba et le pèlerinage. (quartier-Est)",Moyen_Orient,68.0,1,0,0,0,1402
+La Mecque-Nord,Arabie Saoudite,1461,1,51.0,0.0,51,51,1.0,"Ville sainte, célèbre pour la Kaaba et le pèlerinage. (quartier-Nord)",Moyen_Orient,69.0,1,0,0,0,1690
+La Mecque-Sud,Arabie Saoudite,1695,1,37.0,0.0,37,37,0.0,"Ville sainte, célèbre pour la Kaaba et le pèlerinage. (quartier-Sud)",Moyen_Orient,68.0,1,0,0,0,2046
+La Plata,Argentine,1123,1,48.0,0.0,48,48,1.0,"Ville planifiée, réputée pour sa cathédrale et son musée.",Amériques,57.0,1,0,0,0,1463
+La Plata-Est,Argentine,1825,1,58.0,0.0,58,58,0.0,"Ville planifiée, réputée pour sa cathédrale et son musée. (quartier-Est)",Amériques,72.0,1,0,0,0,1599
+La Plata-Sud,Argentine,1591,2,52.5,10.606601717798211,45,60,0.0,"Ville planifiée, réputée pour sa cathédrale et son musée. (quartier-Sud)",Amériques,72.0,1,0,0,0,2256
+La Serena,Chili,1127,1,27.0,0.0,27,27,0.0,"Ville balnéaire, connue pour ses plages et son observatoire.",Amériques,60.0,1,0,0,0,2083
+La Serena-Est,Chili,1829,2,32.5,17.67766952966369,20,45,0.5,"Ville balnéaire, connue pour ses plages et son observatoire. (quartier-Est)",Amériques,75.0,1,0,0,0,2059
+La Serena-Nord,Chili,1361,2,40.0,9.899494936611664,33,47,0.5,"Ville balnéaire, connue pour ses plages et son observatoire. (quartier-Nord)",Amériques,76.0,1,0,0,0,1657
+Lagos,Nigeria,1215,1,31.0,0.0,31,31,0.0,"Ville la plus peuplée, connue pour ses plages et son industrie musicale.",Afrique,72.0,1,0,0,0,2301
+Lagos-Est,Nigeria,1917,1,40.0,0.0,40,40,0.0,"Ville la plus peuplée, connue pour ses plages et son industrie musicale. (quartier-Est)",Afrique,87.0,1,0,0,0,2376
+Lagos-Nord,Nigeria,1449,2,43.5,19.091883092036785,30,57,0.0,"Ville la plus peuplée, connue pour ses plages et son industrie musicale. (quartier-Nord)",Afrique,88.0,1,0,0,0,2090
+Lagos-Sud,Nigeria,1683,3,32.666666666666664,21.96208854670551,19,58,0.6666666666666666,"Ville la plus peuplée, connue pour ses plages et son industrie musicale. (quartier-Sud)",Afrique,87.0,1,0,0,0,2421
+Larissa,Grèce,1158,1,55.0,0.0,55,55,1.0,"Ville de Thessalie, réputée pour son histoire antique.",Europe_Sud,54.0,1,0,1,0,1283
+Larissa-Est,Grèce,1860,1,47.0,0.0,47,47,1.0,"Ville de Thessalie, réputée pour son histoire antique. (quartier-Est)",Europe_Sud,69.0,1,0,1,0,1898
+Larissa-Nord,Grèce,1392,1,57.0,0.0,57,57,1.0,"Ville de Thessalie, réputée pour son histoire antique. (quartier-Nord)",Europe_Sud,70.0,1,0,1,0,1500
+Larissa-Sud,Grèce,1626,1,55.0,0.0,55,55,0.0,"Ville de Thessalie, réputée pour son histoire antique. (quartier-Sud)",Europe_Sud,69.0,1,0,1,0,1413
+Lausanne,Suisse,1177,1,35.0,0.0,35,35,0.0,"Ville olympique, connue pour son université et son lac.",Europe_Ouest,55.0,0,0,0,0,836
+Lausanne-Nord,Suisse,1411,2,40.5,0.7071067811865476,40,41,0.5,"Ville olympique, connue pour son université et son lac. (quartier-Nord)",Europe_Ouest,71.0,0,0,0,0,1235
+Lausanne-Sud,Suisse,1645,3,49.0,5.5677643628300215,43,54,0.6666666666666666,"Ville olympique, connue pour son université et son lac. (quartier-Sud)",Europe_Ouest,70.0,0,0,0,0,1463
+Le Caire,Égypte,1094,2,46.0,18.384776310850235,33,59,0.5,"Capitale égyptienne, connue pour les pyramides et le Nil.",Afrique,57.0,0,1,0,0,1118
+Le Caire-Nord,Égypte,1328,1,53.0,0.0,53,53,0.0,"Capitale égyptienne, connue pour les pyramides et le Nil. (quartier-Nord)",Afrique,73.0,0,1,0,0,1600
+Le Caire-Sud,Égypte,1562,1,51.0,0.0,51,51,0.0,"Capitale égyptienne, connue pour les pyramides et le Nil. (quartier-Sud)",Afrique,72.0,0,1,0,0,1479
+Le Cap,Afrique du Sud,1109,3,43.0,21.0,19,58,0.3333333333333333,"Ville côtière, célèbre pour la montagne de la Table.",Afrique,52.0,1,0,0,0,2083
+Le Cap-Est,Afrique du Sud,1811,2,44.5,0.7071067811865476,44,45,0.0,"Ville côtière, célèbre pour la montagne de la Table. (quartier-Est)",Afrique,67.0,1,0,0,0,2324
+Le Cap-Nord,Afrique du Sud,1343,1,30.0,0.0,30,30,0.0,"Ville côtière, célèbre pour la montagne de la Table. (quartier-Nord)",Afrique,68.0,1,0,0,0,2211
+Liberec,Tchéquie,1198,1,34.0,0.0,34,34,1.0,"Ville du nord, réputée pour ses montagnes et son zoo.",Autre,53.0,1,0,0,0,1532
+Liberec-Est,Tchéquie,1900,1,39.0,0.0,39,39,0.0,"Ville du nord, réputée pour ses montagnes et son zoo. (quartier-Est)",Autre,68.0,1,0,0,0,1625
+Liberec-Nord,Tchéquie,1432,1,59.0,0.0,59,59,0.0,"Ville du nord, réputée pour ses montagnes et son zoo. (quartier-Nord)",Autre,69.0,1,0,0,0,2252
+Liberec-Sud,Tchéquie,1666,3,29.33333333333333,7.234178138070235,21,34,0.6666666666666666,"Ville du nord, réputée pour ses montagnes et son zoo. (quartier-Sud)",Autre,68.0,1,0,0,0,1990
+Lille-Est,France,1725,3,31.0,14.422205101855956,19,47,0.3333333333333333,"Ville du nord, connue pour sa braderie et son centre historique. (quartier-Est)",Europe_Ouest,79.0,0,0,1,0,1236
+Lille-Nord,France,1257,1,39.0,0.0,39,39,1.0,"Ville du nord, connue pour sa braderie et son centre historique. (quartier-Nord)",Europe_Ouest,80.0,0,0,1,0,1047
+Lille-Ouest,France,1959,1,47.0,0.0,47,47,0.0,"Ville du nord, connue pour sa braderie et son centre historique. (quartier-Ouest)",Europe_Ouest,81.0,0,0,1,0,1773
+Lille-Sud,France,1491,1,56.0,0.0,56,56,0.0,"Ville du nord, connue pour sa braderie et son centre historique. (quartier-Sud)",Europe_Ouest,79.0,0,0,1,0,1600
+Limerick-Est,Irlande,1889,2,41.5,7.7781745930520225,36,47,0.0,"Ville historique, connue pour son château et sa poésie. (quartier-Est)",Europe_Nord,70.0,0,0,1,0,1719
+Limerick-Nord,Irlande,1421,2,37.5,0.7071067811865476,37,38,1.0,"Ville historique, connue pour son château et sa poésie. (quartier-Nord)",Europe_Nord,71.0,0,0,1,0,1398
+Limerick-Sud,Irlande,1655,1,46.0,0.0,46,46,1.0,"Ville historique, connue pour son château et sa poésie. (quartier-Sud)",Europe_Nord,70.0,0,0,1,0,1728
+Linz-Sud,Autriche,1651,2,55.0,2.8284271247461903,53,57,0.5,"Ville industrielle, réputée pour son art et sa technologie. (quartier-Sud)",Europe_Ouest,74.0,1,0,0,0,2375
+Lisbonne,Portugal,1159,3,40.333333333333336,1.154700538379251,39,41,0.6666666666666666,"Capitale portugaise, célèbre pour ses tramways et le quartier de l’Alfama.",Europe_Sud,74.0,1,1,0,0,2179
+Lisbonne-Est,Portugal,1861,2,45.0,4.242640687119285,42,48,0.5,"Capitale portugaise, célèbre pour ses tramways et le quartier de l’Alfama. (quartier-Est)",Europe_Sud,89.0,1,1,0,0,2140
+Lisbonne-Nord,Portugal,1393,2,34.0,4.242640687119285,31,37,0.5,"Capitale portugaise, célèbre pour ses tramways et le quartier de l’Alfama. (quartier-Nord)",Europe_Sud,90.0,1,1,0,0,1937
+Liverpool,Royaume-Uni,1056,2,40.0,4.242640687119285,37,43,0.0,"Ville portuaire, connue pour les Beatles et ses docks.",Europe_Nord,54.0,0,0,0,0,1611
+Liverpool-Est,Royaume-Uni,1758,2,34.0,16.97056274847714,22,46,0.5,"Ville portuaire, connue pour les Beatles et ses docks. (quartier-Est)",Europe_Nord,69.0,0,0,0,0,1530
+Liverpool-Ouest,Royaume-Uni,1992,2,30.5,16.263455967290593,19,42,0.0,"Ville portuaire, connue pour les Beatles et ses docks. (quartier-Ouest)",Europe_Nord,71.0,0,0,0,0,1688
+Liège-Est,Belgique,1874,1,55.0,0.0,55,55,0.0,"Ville industrielle, connue pour ses gaufres et son carnaval. (quartier-Est)",Europe_Ouest,75.0,0,0,0,0,1837
+Liège-Nord,Belgique,1406,1,56.0,0.0,56,56,1.0,"Ville industrielle, connue pour ses gaufres et son carnaval. (quartier-Nord)",Europe_Ouest,76.0,0,0,0,0,1812
+Liège-Sud,Belgique,1640,2,40.0,2.8284271247461903,38,42,0.5,"Ville industrielle, connue pour ses gaufres et son carnaval. (quartier-Sud)",Europe_Ouest,75.0,0,0,0,0,1422
+Londres,Royaume-Uni,1054,2,53.0,4.242640687119285,50,56,1.0,"Capitale britannique, connue pour Big Ben et Buckingham Palace.",Europe_Nord,63.0,0,1,0,0,1775
+Londres-Nord,Royaume-Uni,1288,2,20.0,2.8284271247461903,18,22,0.5,"Capitale britannique, connue pour Big Ben et Buckingham Palace. (quartier-Nord)",Europe_Nord,79.0,0,1,0,0,1140
+Londres-Ouest,Royaume-Uni,1990,2,50.5,2.1213203435596424,49,52,0.5,"Capitale britannique, connue pour Big Ben et Buckingham Palace. (quartier-Ouest)",Europe_Nord,80.0,0,1,0,0,1414
+Londres-Sud,Royaume-Uni,1522,2,45.5,19.091883092036785,32,59,0.0,"Capitale britannique, connue pour Big Ben et Buckingham Palace. (quartier-Sud)",Europe_Nord,78.0,0,1,0,0,1969
+Los Angeles,États-Unis,1060,2,41.5,19.091883092036785,28,55,1.0,"Ville californienne, célèbre pour Hollywood et ses plages.",Amériques,58.0,1,0,0,0,1577
+Los Angeles-Est,États-Unis,1762,3,38.66666666666666,17.387735140993303,19,52,0.0,"Ville californienne, célèbre pour Hollywood et ses plages. (quartier-Est)",Amériques,73.0,1,0,0,0,2140
+Los Angeles-Ouest,États-Unis,1996,1,20.0,0.0,20,20,0.0,"Ville californienne, célèbre pour Hollywood et ses plages. (quartier-Ouest)",Amériques,75.0,1,0,0,0,1612
+Los Angeles-Sud,États-Unis,1528,2,48.0,12.727922061357855,39,57,1.0,"Ville californienne, célèbre pour Hollywood et ses plages. (quartier-Sud)",Amériques,73.0,1,0,0,0,2193
+Louxor-Est,Égypte,1799,1,42.0,0.0,42,42,1.0,"Ville antique, célèbre pour ses temples et sa vallée des Rois. (quartier-Est)",Afrique,77.0,1,0,0,0,1513
+Louxor-Nord,Égypte,1331,1,55.0,0.0,55,55,1.0,"Ville antique, célèbre pour ses temples et sa vallée des Rois. (quartier-Nord)",Afrique,78.0,1,0,0,0,1725
+Lund,Suède,1133,1,26.0,0.0,26,26,0.0,"Ville étudiante, réputée pour son université.",Europe_Nord,45.0,1,0,0,0,1673
+Lund-Est,Suède,1835,1,52.0,0.0,52,52,0.0,"Ville étudiante, réputée pour son université. (quartier-Est)",Europe_Nord,60.0,1,0,0,0,1771
+Lund-Sud,Suède,1601,1,37.0,0.0,37,37,0.0,"Ville étudiante, réputée pour son université. (quartier-Sud)",Europe_Nord,60.0,1,0,0,0,2080
+Lyon-Nord,France,1252,2,35.5,10.606601717798211,28,43,0.5,"Ville gastronomique, célèbre pour ses bouchons et son vieux quartier. (quartier-Nord)",Europe_Ouest,85.0,1,0,0,0,1551
+Lyon-Ouest,France,1954,2,25.5,2.1213203435596424,24,27,1.0,"Ville gastronomique, célèbre pour ses bouchons et son vieux quartier. (quartier-Ouest)",Europe_Ouest,86.0,1,0,0,0,2456
+Lyon-Sud,France,1486,1,35.0,0.0,35,35,0.0,"Ville gastronomique, célèbre pour ses bouchons et son vieux quartier. (quartier-Sud)",Europe_Ouest,84.0,1,0,0,0,1743
+Madrid,Espagne,1044,2,45.0,18.384776310850235,32,58,0.0,"Capitale espagnole, réputée pour ses musées, ses parcs et sa vie nocturne animée.",Europe_Sud,81.0,1,1,0,0,1763
+Madrid-Est,Espagne,1746,2,43.5,12.020815280171307,35,52,0.0,"Capitale espagnole, réputée pour ses musées, ses parcs et sa vie nocturne animée. (quartier-Est)",Europe_Sud,96.0,1,1,0,0,2311
+Madrid-Nord,Espagne,1278,3,39.66666666666666,6.658328118479392,32,44,0.3333333333333333,"Capitale espagnole, réputée pour ses musées, ses parcs et sa vie nocturne animée. (quartier-Nord)",Europe_Sud,97.0,1,1,0,0,2222
+Mahdia-Nord,Tunisie,1246,2,37.0,2.8284271247461903,35,39,0.5,Ville portuaire réputée pour ses plages et sa médina fortifiée. (quartier-Nord),Maghreb,79.0,1,0,1,0,1526
+Mahdia-Ouest,Tunisie,1948,1,20.0,0.0,20,20,0.0,Ville portuaire réputée pour ses plages et sa médina fortifiée. (quartier-Ouest),Maghreb,80.0,1,0,1,0,1559
+Malmö,Suède,1131,1,21.0,0.0,21,21,0.0,"Ville du sud, connue pour son pont vers le Danemark.",Europe_Nord,52.0,0,0,0,0,628
+Malmö-Est,Suède,1833,1,34.0,0.0,34,34,1.0,"Ville du sud, connue pour son pont vers le Danemark. (quartier-Est)",Europe_Nord,67.0,0,0,0,0,1002
+Malmö-Nord,Suède,1365,4,37.75,13.841363131329707,21,53,0.25,"Ville du sud, connue pour son pont vers le Danemark. (quartier-Nord)",Europe_Nord,68.0,0,0,0,0,1178
+Malmö-Sud,Suède,1599,2,42.5,3.5355339059327378,40,45,0.5,"Ville du sud, connue pour son pont vers le Danemark. (quartier-Sud)",Europe_Nord,67.0,0,0,0,0,1528
+Manchester,Royaume-Uni,1055,1,53.0,0.0,53,53,1.0,"Ville industrielle, célèbre pour son équipe de football et sa musique.",Europe_Nord,70.0,1,0,0,0,2115
+Manchester-Est,Royaume-Uni,1757,2,50.5,2.1213203435596424,49,52,0.5,"Ville industrielle, célèbre pour son équipe de football et sa musique. (quartier-Est)",Europe_Nord,85.0,1,0,0,0,1757
+Manchester-Nord,Royaume-Uni,1289,4,49.75,5.619905100029123,45,56,0.75,"Ville industrielle, célèbre pour son équipe de football et sa musique. (quartier-Nord)",Europe_Nord,86.0,1,0,0,0,1890
+Manchester-Ouest,Royaume-Uni,1991,2,41.0,8.48528137423857,35,47,0.5,"Ville industrielle, célèbre pour son équipe de football et sa musique. (quartier-Ouest)",Europe_Nord,87.0,1,0,0,0,1973
+Marrakech,Maroc,1029,1,41.0,0.0,41,41,1.0,"Ville touristique, célèbre pour la place Jemaa el-Fna et ses souks.",Maghreb,67.0,1,0,0,0,1421
+Marrakech-Est,Maroc,1731,1,26.0,0.0,26,26,1.0,"Ville touristique, célèbre pour la place Jemaa el-Fna et ses souks. (quartier-Est)",Maghreb,82.0,1,0,0,0,1473
+Marrakech-Nord,Maroc,1263,3,39.66666666666666,7.023769168568491,33,47,0.3333333333333333,"Ville touristique, célèbre pour la place Jemaa el-Fna et ses souks. (quartier-Nord)",Maghreb,83.0,1,0,0,0,1749
+Marrakech-Sud,Maroc,1497,1,46.0,0.0,46,46,0.0,"Ville touristique, célèbre pour la place Jemaa el-Fna et ses souks. (quartier-Sud)",Maghreb,82.0,1,0,0,0,2092
+Marseille-Est,France,1721,1,60.0,0.0,60,60,1.0,"Ville portuaire méditerranéenne, réputée pour le Vieux-Port et la basilique Notre-Dame de la Garde. (quartier-Est)",Europe_Ouest,114.0,1,0,0,0,2659
+Marseille-Nord,France,1253,1,56.0,0.0,56,56,1.0,"Ville portuaire méditerranéenne, réputée pour le Vieux-Port et la basilique Notre-Dame de la Garde. (quartier-Nord)",Europe_Ouest,115.0,1,0,0,0,2377
+Melbourne-Sud,Australie,1573,1,60.0,0.0,60,60,0.0,"Ville culturelle, réputée pour ses cafés et ses festivals. (quartier-Sud)",Océanie,73.0,1,0,0,0,1916
+Mendoza-Est,Argentine,1824,2,28.0,4.242640687119285,25,31,0.0,"Ville viticole, célèbre pour ses vignobles et la cordillère des Andes. (quartier-Est)",Amériques,85.0,1,0,0,0,2174
+Mendoza-Sud,Argentine,1590,4,44.0,18.110770276274835,18,60,0.75,"Ville viticole, célèbre pour ses vignobles et la cordillère des Andes. (quartier-Sud)",Amériques,85.0,1,0,0,0,2717
+Mexico,Mexique,1114,2,47.5,9.192388155425116,41,54,0.5,"Capitale mexicaine, connue pour le Zócalo et les pyramides de Teotihuacan.",Amériques,74.0,0,1,0,0,1359
+Mexico-Sud,Mexique,1582,2,31.0,5.656854249492381,27,35,0.0,"Capitale mexicaine, connue pour le Zócalo et les pyramides de Teotihuacan. (quartier-Sud)",Amériques,89.0,0,1,0,0,1511
+Miami-Ouest,États-Unis,1999,1,38.0,0.0,38,38,1.0,"Ville de Floride, célèbre pour ses plages et sa vie nocturne. (quartier-Ouest)",Amériques,78.0,1,0,0,0,1483
+Miami-Sud,États-Unis,1531,2,26.0,8.48528137423857,20,32,0.0,"Ville de Floride, célèbre pour ses plages et sa vie nocturne. (quartier-Sud)",Amériques,76.0,1,0,0,0,2311
+Milan-Est,Italie,1742,1,44.0,0.0,44,44,0.0,"Ville de la mode, connue pour son Duomo et la Scala. (quartier-Est)",Europe_Sud,67.0,0,0,0,0,1023
+Milan-Nord,Italie,1274,1,19.0,0.0,19,19,0.0,"Ville de la mode, connue pour son Duomo et la Scala. (quartier-Nord)",Europe_Sud,68.0,0,0,0,0,1006
+Milan-Ouest,Italie,1976,2,36.5,12.020815280171307,28,45,0.5,"Ville de la mode, connue pour son Duomo et la Scala. (quartier-Ouest)",Europe_Sud,69.0,0,0,0,0,1001
+Miskolc,Hongrie,1192,2,44.5,12.020815280171307,36,53,0.5,"Ville industrielle, réputée pour ses grottes et ses bains.",Europe_Est,58.0,1,0,0,0,1789
+Miskolc-Est,Hongrie,1894,1,54.0,0.0,54,54,1.0,"Ville industrielle, réputée pour ses grottes et ses bains. (quartier-Est)",Europe_Est,73.0,1,0,0,0,1802

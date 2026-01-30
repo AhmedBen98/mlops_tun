@@ -64,7 +64,7 @@ jobs:
           dvc pull || true
       - name: Validate data schema
         run: |
-          python -c 'import pandas as pd; import sys; df = pd.read_csv("mlops/data/raw/mlops_dataset_original.csv"); print(f"Dataset shape: {df.shape}"); print(f"Columns: {list(df.columns)}"); sys.exit(1) if df.empty else None; print(f"WARNING: Found {df.isnull().sum().sum()} missing values") if df.isnull().sum().sum() > 0 else None; print("Data validation passed!")'
+          python -c 'import pandas as pd; import sys; df = pd.read_csv("data/raw/mlops_dataset_original.csv"); print(f"Dataset shape: {df.shape}"); print(f"Columns: {list(df.columns)}"); sys.exit(1) if df.empty else None; print(f"WARNING: Found {df.isnull().sum().sum()} missing values") if df.isnull().sum().sum() > 0 else None; print("Data validation passed!")'
 
   ml-pipeline:
     name: Run ML Pipeline
