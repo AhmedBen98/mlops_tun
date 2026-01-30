@@ -2,10 +2,14 @@
 Test suite for data processing module
 """
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'src'))
+
 import pytest
 import pandas as pd
 import numpy as np
-from src.data_processing import DataProcessor
+from data_processing import DataProcessor
 
 
 @pytest.fixture

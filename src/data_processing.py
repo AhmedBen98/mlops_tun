@@ -10,7 +10,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler, LabelEncoder
 import joblib
 
-from src.utils import setup_logging, load_params, ensure_dir
+import utils
+setup_logging = utils.setup_logging
+load_params = utils.load_params
+ensure_dir = utils.ensure_dir
 
 logger = setup_logging()
 
