@@ -45,7 +45,14 @@ def load_params(params_file: str = "params.yaml") -> Dict[str, Any]:
         Dictionary containing parameters
     """
     if not os.path.isabs(params_file):
-        params_file = os.path.join(os.getcwd(), params_file)
+        # Try relative to current working directory
+        if os.path.exists(params_file):
+            resolved_path = params_file
+        else:
+            # Try relative to the script's directory (for CI/CD)
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            resolved_path = os.path.join(script_dir, params_file)
+        params_file = resolved_path
     with open(params_file, 'r') as f:
         params = yaml.safe_load(f)
     return params
