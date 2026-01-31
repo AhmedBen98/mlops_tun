@@ -83,8 +83,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Copy params.yaml to root
-        run: cp mlops/params.yaml params.yaml
       - name: Run data processing
         run: |
           PYTHONPATH=. python3 src/data_processing.py --input data/raw/mlops_dataset_v3.csv --output data/processed --params params.yaml
