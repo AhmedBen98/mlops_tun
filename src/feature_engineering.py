@@ -8,7 +8,10 @@ import pandas as pd
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.feature_selection import SelectKBest, f_regression
 
-from src.utils import setup_logging, load_params, ensure_dir
+import utils
+setup_logging = utils.setup_logging
+load_params = utils.load_params
+ensure_dir = utils.ensure_dir
 
 logger = setup_logging()
 
@@ -69,9 +72,15 @@ class FeatureEngineer:
 
     def engineer(self, train_file, val_file, test_file, output_dir):
         logger.info("Loading processed data...")
-        train_df = pd.read_csv(train_file)
-        val_df = pd.read_csv(val_file)
-        test_df = pd.read_csv(test_file)
+        import os
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+        train_path = train_file if os.path.isabs(train_file) else os.path.join(project_root, train_file)
+        val_path = val_file if os.path.isabs(val_file) else os.path.join(project_root, val_file)
+        test_path = test_file if os.path.isabs(test_file) else os.path.join(project_root, test_file)
+        output_dir_abs = output_dir if os.path.isabs(output_dir) else os.path.join(project_root, output_dir)
+        train_df = pd.read_csv(train_path)
+        val_df = pd.read_csv(val_path)
+        test_df = pd.read_csv(test_path)
         target_col = 'visiteurs'
         X_train = train_df.drop(columns=[target_col])
         y_train = train_df[target_col]
@@ -84,25 +93,28 @@ class FeatureEngineer:
         X_test = self.create_domain_features(X_test)
         X_train, X_val, X_test = self.create_polynomial_features(X_train, X_val, X_test)
         X_train, X_val, X_test = self.select_features(X_train, y_train, X_val, X_test)
-        ensure_dir(output_dir)
+        ensure_dir(output_dir_abs)
         train_engineered = pd.concat([X_train, y_train], axis=1)
         val_engineered = pd.concat([X_val, y_val], axis=1)
         test_engineered = pd.concat([X_test, y_test], axis=1)
-        train_engineered.to_csv(f"{output_dir}/train_engineered.csv", index=False)
-        val_engineered.to_csv(f"{output_dir}/val_engineered.csv", index=False)
-        test_engineered.to_csv(f"{output_dir}/test_engineered.csv", index=False)
+        train_engineered.to_csv(os.path.join(output_dir_abs, "train_engineered.csv"), index=False)
+        val_engineered.to_csv(os.path.join(output_dir_abs, "val_engineered.csv"), index=False)
+        test_engineered.to_csv(os.path.join(output_dir_abs, "test_engineered.csv"), index=False)
         logger.info(f"Feature engineering complete. Final shape: {X_train.shape}")
-        logger.info(f"Engineered data saved to {output_dir}")
+        logger.info(f"Engineered data saved to {output_dir_abs}")
 
 def main():
     parser = argparse.ArgumentParser(description='Feature engineering')
-    parser.add_argument('--train', type=str, default='data/processed/train.csv')
-    parser.add_argument('--val', type=str, default='data/processed/val.csv')
-    parser.add_argument('--test', type=str, default='data/processed/test.csv')
-    parser.add_argument('--output', type=str, default='data/processed')
-    parser.add_argument('--params', type=str, default='params.yaml')
+    parser.add_argument('--train', type=str, default='mlops/data/processed/train.csv')
+    parser.add_argument('--val', type=str, default='mlops/data/processed/val.csv')
+    parser.add_argument('--test', type=str, default='mlops/data/processed/test.csv')
+    parser.add_argument('--output', type=str, default='mlops/data/processed')
+    parser.add_argument('--params', type=str, default='mlops/params.yaml')
     args = parser.parse_args()
-    params = load_params(args.params)
+    import os
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+    params_path = args.params if os.path.isabs(args.params) else os.path.join(project_root, args.params)
+    params = load_params(params_path)
     engineer = FeatureEngineer(params)
     engineer.engineer(args.train, args.val, args.test, args.output)
 

@@ -1,0 +1,29 @@
+2026-01-31 01:55:49,751 - utils - INFO - Loading data from /home/abenabderrazak/Bureau/djerba-dreamer-main/data/raw/mlops_dataset_v3.csv
+2026-01-31 01:57:04,532 - utils - INFO - Loading data from /home/abenabderrazak/Bureau/djerba-dreamer-main/../data/raw/mlops_dataset_v3.csv
+2026-01-31 01:57:40,590 - utils - INFO - Loading data from /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/data/raw/mlops_dataset_v3.csv
+2026-01-31 01:57:40,610 - utils - INFO - Loaded 817 samples with 17 columns
+2026-01-31 01:57:40,612 - utils - INFO - Encoding categorical columns: ['city_name', 'country', 'description', 'region']
+2026-01-31 01:57:40,627 - utils - INFO - Target column: visiteurs
+2026-01-31 01:57:40,642 - utils - INFO - Removed 96 outliers (11.75%)
+2026-01-31 01:57:40,642 - utils - INFO - Target column: visiteurs
+2026-01-31 01:57:40,648 - utils - INFO - Train set: 504 samples
+2026-01-31 01:57:40,648 - utils - INFO - Validation set: 72 samples
+2026-01-31 01:57:40,648 - utils - INFO - Test set: 145 samples
+2026-01-31 01:57:40,648 - utils - INFO - Scaling features using standard scaler
+2026-01-31 01:57:40,712 - utils - INFO - Processed data saved to /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/data/processed
+2026-01-31 01:57:51,779 - utils - INFO - Loading processed data...
+2026-01-31 01:57:51,805 - utils - INFO - Created 2 domain-specific features
+2026-01-31 01:57:51,809 - utils - INFO - Created 2 domain-specific features
+2026-01-31 01:57:51,812 - utils - INFO - Created 2 domain-specific features
+2026-01-31 01:57:51,813 - utils - INFO - Creating polynomial features (degree=2, interaction_only=False)
+2026-01-31 01:57:51,833 - utils - INFO - Polynomial features created: 189 features
+2026-01-31 01:57:51,833 - utils - INFO - Selecting top 10 features
+2026-01-31 01:57:51,861 - utils - INFO - Selected features: ['num_users', 'std_age', 'desc_length', 'is_touristique', 'num_users^2', 'num_users std_age', 'num_users users_desc_interaction', 'std_age users_desc_interaction', 'desc_length users_desc_interaction', 'is_touristique^2']
+2026-01-31 01:57:51,914 - utils - INFO - Feature engineering complete. Final shape: (504, 10)
+2026-01-31 01:57:51,914 - utils - INFO - Engineered data saved to /home/abenabderrazak/Bureau/djerba-dreamer-main/mlops/data/processed
+2026-01-31 01:58:05,226 - utils - INFO - Loading training and validation data...
+2026-01-31 01:58:30,737 - utils - INFO - Loading training and validation data...
+2026-01-31 01:58:56,856 - utils - INFO - Loading training and validation data...
+2026-01-31 01:59:29,908 - utils - INFO - Loading training and validation data...
+2026-01-31 02:00:06,111 - utils - INFO - Loading training and validation data...
+2026-01-31 02:00:53,527 - utils - INFO - Loading training and validation data...

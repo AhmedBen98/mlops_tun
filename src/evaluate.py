@@ -10,10 +10,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-from src.utils import (
-    setup_logging, load_params, ensure_dir, save_metrics,
-    calculate_regression_metrics, print_metrics
-)
+import utils
+setup_logging = utils.setup_logging
+load_params = utils.load_params
+ensure_dir = utils.ensure_dir
+save_metrics = utils.save_metrics
+calculate_regression_metrics = utils.calculate_regression_metrics
+print_metrics = utils.print_metrics
 
 logger = setup_logging()
 
@@ -89,7 +92,11 @@ class ModelEvaluator:
 
     def evaluate(self, test_file: str, model_path: str, output_dir: str = None):
         logger.info(f"Loading test data from {test_file}")
-        test_df = pd.read_csv(test_file)
+        import os
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+        test_path = test_file if os.path.isabs(test_file) else os.path.join(project_root, test_file)
+        model_path_abs = model_path if os.path.isabs(model_path) else os.path.join(project_root, model_path)
+        test_df = pd.read_csv(test_path)
         # Set output directories
         if output_dir:
             plots_dir = f"plots/{output_dir}"
@@ -105,7 +112,7 @@ class ModelEvaluator:
         y_test = test_df[target_col]
         logger.info(f"Test data shape: {X_test.shape}")
         # Load model
-        model = self.load_model(model_path)
+        model = self.load_model(model_path_abs)
         # Make predictions
         logger.info("Making predictions...")
         y_pred = model.predict(X_test)
@@ -138,9 +145,12 @@ def main():
     parser.add_argument('--model', type=str, default='models/model.pkl')
     parser.add_argument('--output', type=str, default=None,
                         help='Output directory for plots and metrics (e.g., v1, v2, v3)')
-    parser.add_argument('--params', type=str, default='params.yaml')
+    parser.add_argument('--params', type=str, default='mlops/params.yaml')
     args = parser.parse_args()
-    params = load_params(args.params)
+    import os
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+    params_path = args.params if os.path.isabs(args.params) else os.path.join(project_root, args.params)
+    params = load_params(params_path)
     evaluator = ModelEvaluator(params)
     evaluator.evaluate(args.test, args.model, args.output)
 

@@ -501,3 +501,72 @@
 2026-01-30 21:42:01,988 - src.utils - INFO - Training final model with best parameters...
 2026-01-30 21:42:02,200 - src.utils - INFO - Best model saved to v3/model_optimized.pkl
 2026-01-30 21:42:05,984 - src.utils - INFO - Optimization complete!
+2026-01-31 01:40:55,594 - src.utils - INFO - Loading training and validation data...
+2026-01-31 01:41:46,476 - utils - INFO - Loading data from data/raw/mlops_dataset_v3.csv
+2026-01-31 01:41:46,487 - utils - INFO - Loaded 817 samples with 17 columns
+2026-01-31 01:41:46,489 - utils - INFO - Encoding categorical columns: ['city_name', 'country', 'description', 'region']
+2026-01-31 01:41:46,497 - utils - INFO - Target column: visiteurs
+2026-01-31 01:41:46,511 - utils - INFO - Removed 96 outliers (11.75%)
+2026-01-31 01:41:46,511 - utils - INFO - Target column: visiteurs
+2026-01-31 01:41:46,516 - utils - INFO - Train set: 504 samples
+2026-01-31 01:41:46,517 - utils - INFO - Validation set: 72 samples
+2026-01-31 01:41:46,517 - utils - INFO - Test set: 145 samples
+2026-01-31 01:41:46,517 - utils - INFO - Scaling features using standard scaler
+2026-01-31 01:41:46,597 - utils - INFO - Processed data saved to data/processed
+2026-01-31 01:41:48,580 - src.utils - INFO - Loading processed data...
+2026-01-31 01:41:48,615 - src.utils - INFO - Created 2 domain-specific features
+2026-01-31 01:41:48,617 - src.utils - INFO - Created 2 domain-specific features
+2026-01-31 01:41:48,620 - src.utils - INFO - Created 2 domain-specific features
+2026-01-31 01:41:48,620 - src.utils - INFO - Creating polynomial features (degree=2, interaction_only=False)
+2026-01-31 01:41:48,636 - src.utils - INFO - Polynomial features created: 189 features
+2026-01-31 01:41:48,636 - src.utils - INFO - Selecting top 10 features
+2026-01-31 01:41:48,662 - src.utils - INFO - Selected features: ['num_users', 'std_age', 'desc_length', 'is_touristique', 'num_users^2', 'num_users std_age', 'num_users users_desc_interaction', 'std_age users_desc_interaction', 'desc_length users_desc_interaction', 'is_touristique^2']
+2026-01-31 01:41:48,711 - src.utils - INFO - Feature engineering complete. Final shape: (504, 10)
+2026-01-31 01:41:48,711 - src.utils - INFO - Engineered data saved to data/processed
+2026-01-31 01:42:28,527 - src.utils - INFO - Loading training and validation data...
+2026-01-31 01:42:28,543 - src.utils - INFO - Training data shape: (504, 10)
+2026-01-31 01:42:28,543 - src.utils - INFO - Validation data shape: (72, 10)
+2026-01-31 01:42:28,729 - src.utils - INFO - Starting MLflow run...
+2026-01-31 01:42:28,733 - src.utils - INFO - Using RandomForestRegressor
+2026-01-31 01:42:28,740 - src.utils - INFO - Training model...
+2026-01-31 01:42:29,285 - src.utils - INFO - Training completed in 0.54 seconds
+2026-01-31 01:42:29,287 - src.utils - INFO - Performing cross-validation...
+2026-01-31 01:42:31,657 - src.utils - INFO - CV Score: -344.8227 (+/- 25.4431)
+2026-01-31 01:42:31,704 - src.utils - INFO - --- Training Metrics ---
+2026-01-31 01:42:31,704 - src.utils - INFO - mae: 154.2755
+2026-01-31 01:42:31,704 - src.utils - INFO - rmse: 195.8616
+2026-01-31 01:42:31,705 - src.utils - INFO - r2: 0.7864
+2026-01-31 01:42:31,705 - src.utils - INFO - --- Validation Metrics ---
+2026-01-31 01:42:31,705 - src.utils - INFO - mae: 240.5875
+2026-01-31 01:42:31,705 - src.utils - INFO - rmse: 300.3210
+2026-01-31 01:42:31,705 - src.utils - INFO - r2: 0.3392
+2026-01-31 01:42:31,731 - src.utils - INFO - Top 10 important features:
+2026-01-31 01:42:38,283 - src.utils - INFO - Model logged to MLflow
+2026-01-31 01:42:38,358 - src.utils - INFO - Model saved to models/model.pkl
+2026-01-31 01:42:38,358 - src.utils - INFO - MLflow Run ID: 496b1732af1e40fa951d5801aaf85c69
+2026-01-31 01:43:08,491 - src.utils - INFO - Loading training and validation data...
+2026-01-31 01:43:08,506 - src.utils - INFO - Training data shape: (504, 10)
+2026-01-31 01:43:08,507 - src.utils - INFO - Validation data shape: (72, 10)
+2026-01-31 01:43:08,626 - src.utils - INFO - Starting MLflow run...
+2026-01-31 01:43:08,631 - src.utils - INFO - Using RandomForestRegressor
+2026-01-31 01:43:08,638 - src.utils - INFO - Training model...
+2026-01-31 01:43:09,175 - src.utils - INFO - Training completed in 0.54 seconds
+2026-01-31 01:43:09,177 - src.utils - INFO - Performing cross-validation...
+2026-01-31 01:43:11,675 - src.utils - INFO - CV Score: -344.8227 (+/- 25.4431)
+2026-01-31 01:43:11,724 - src.utils - INFO - --- Training Metrics ---
+2026-01-31 01:43:11,725 - src.utils - INFO - mae: 154.2755
+2026-01-31 01:43:11,725 - src.utils - INFO - rmse: 195.8616
+2026-01-31 01:43:11,725 - src.utils - INFO - r2: 0.7864
+2026-01-31 01:43:11,725 - src.utils - INFO - --- Validation Metrics ---
+2026-01-31 01:43:11,725 - src.utils - INFO - mae: 240.5875
+2026-01-31 01:43:11,725 - src.utils - INFO - rmse: 300.3210
+2026-01-31 01:43:11,725 - src.utils - INFO - r2: 0.3392
+2026-01-31 01:43:11,761 - src.utils - INFO - Top 10 important features:
+2026-01-31 01:43:18,040 - src.utils - INFO - Model logged to MLflow
+2026-01-31 01:43:18,103 - src.utils - INFO - Model saved to models/model.pkl
+2026-01-31 01:43:18,103 - src.utils - INFO - MLflow Run ID: c31f5f019ef143f2915cba29c76975e0
+2026-01-31 02:09:48,627 - utils - INFO - Loading training and validation data...
+2026-01-31 02:10:20,548 - utils - INFO - Loading training and validation data...
+2026-01-31 02:10:41,960 - utils - INFO - Loading training and validation data...
+2026-01-31 02:11:11,971 - utils - INFO - Loading data from /home/abenabderrazak/Bureau/djerba-dreamer-main/data/raw/mlops_dataset_v3.csv
+2026-01-31 02:11:49,015 - utils - INFO - Loading data from /home/abenabderrazak/Bureau/djerba-dreamer-main/data/raw/mlops_dataset_v3.csv

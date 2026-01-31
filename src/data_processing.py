@@ -142,9 +142,12 @@ class DataProcessor:
 
     def process(self, input_file: str, output_dir: str):
         """Main processing pipeline"""
-
+        import os
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+        input_path = input_file if os.path.isabs(input_file) else os.path.join(project_root, input_file)
+        output_dir_abs = output_dir if os.path.isabs(output_dir) else os.path.join(project_root, output_dir)
         # Load data
-        df = self.load_data(input_file)
+        df = self.load_data(input_path)
 
         # Handle missing values
         df = self.handle_missing_values(df)
@@ -197,28 +200,28 @@ class DataProcessor:
         test_df.to_csv(f"{output_dir}/test.csv", index=False)
 
         # Save scaler
-        joblib.dump(self.scaler, f"{output_dir}/scaler.pkl")
+        joblib.dump(self.scaler, os.path.join(output_dir_abs, "scaler.pkl"))
 
-        logger.info(f"Processed data saved to {output_dir}")
+        logger.info(f"Processed data saved to {output_dir_abs}")
 
 
 def main():
     """Main function"""
 
     parser = argparse.ArgumentParser(description='Process dataset')
-    parser.add_argument('--input', type=str, default='data/raw/dataset.csv',
+    parser.add_argument('--input', type=str, default='mlops/data/raw/mlops_dataset_v3.csv',
                         help='Input dataset file')
-    parser.add_argument('--output', type=str, default='data/processed',
+    parser.add_argument('--output', type=str, default='mlops/data/processed',
                         help='Output directory')
-    parser.add_argument('--params', type=str, default='params.yaml',
+    parser.add_argument('--params', type=str, default='mlops/params.yaml',
                         help='Parameters file')
 
     args = parser.parse_args()
 
-    # Load parameters
-    params = load_params(args.params)
-
-    # Process data
+    import os
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+    params_path = args.params if os.path.isabs(args.params) else os.path.join(project_root, args.params)
+    params = load_params(params_path)
     processor = DataProcessor(params)
     processor.process(args.input, args.output)
 

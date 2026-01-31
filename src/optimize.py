@@ -20,10 +20,13 @@ import mlflow
 import mlflow.sklearn
 from mlflow.models.signature import infer_signature
 
-from src.utils import (
-    setup_logging, load_params, ensure_dir, save_metrics,
-    calculate_regression_metrics, print_metrics
-)
+import utils
+setup_logging = utils.setup_logging
+load_params = utils.load_params
+ensure_dir = utils.ensure_dir
+save_metrics = utils.save_metrics
+calculate_regression_metrics = utils.calculate_regression_metrics
+print_metrics = utils.print_metrics
 
 logger = setup_logging()
 

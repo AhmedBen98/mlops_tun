@@ -6,6 +6,7 @@ Adapté pour la prédiction du nombre de visiteurs par ville
 """
 
 import argparse
+import os
 import pandas as pd
 import time
 import joblib
@@ -14,8 +15,12 @@ from sklearn.model_selection import cross_val_score
 import mlflow
 import mlflow.sklearn
 from mlflow.models.signature import infer_signature
+
 import numpy as np
-from src.utils import setup_logging, load_params, ensure_dir
+import utils
+setup_logging = utils.setup_logging
+load_params = utils.load_params
+ensure_dir = utils.ensure_dir
 
 logger = setup_logging()
 
@@ -57,9 +62,14 @@ class ModelTrainer:
         return self.model
 
     def train(self, train_file: str, val_file: str, output_dir: str):
+        import os  # S'assurer que le module os est bien importé dans la portée locale
         logger.info("Loading training and validation data...")
-        train_df = pd.read_csv(train_file)
-        val_df = pd.read_csv(val_file)
+        # Always resolve paths relative to project root
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+        train_path = train_file if os.path.isabs(train_file) else os.path.join(project_root, train_file)
+        val_path = val_file if os.path.isabs(val_file) else os.path.join(project_root, val_file)
+        train_df = pd.read_csv(train_path)
+        val_df = pd.read_csv(val_path)
 
         target_col = 'visiteurs'
         X_train = train_df.drop(columns=[target_col])
@@ -70,7 +80,7 @@ class ModelTrainer:
         logger.info(f"Training data shape: {X_train.shape}")
         logger.info(f"Validation data shape: {X_val.shape}")
 
-        mlflow.set_tracking_uri('mlruns')
+        mlflow.set_tracking_uri(os.path.join(project_root, 'mlruns'))
         experiment_name = "visiteurs-prediction-experiment"
         mlflow.set_experiment(experiment_name)
 
@@ -116,11 +126,10 @@ class ModelTrainer:
             print_metrics(val_metrics, "Validation Metrics")
 
             # Save train metrics to metrics/{version}/train_metrics.json
-            import os
             version = os.path.basename(os.path.normpath(output_dir))
-            metrics_dir = f"metrics/{version}"
+            metrics_dir = os.path.join("metrics", version)
             ensure_dir(metrics_dir)
-            from src.utils import save_metrics
+            from utils import save_metrics
             save_metrics(train_metrics, f"{metrics_dir}/train_metrics.json")
 
             # Feature importance
@@ -134,9 +143,9 @@ class ModelTrainer:
                 # Déduire la version à partir du dossier output_dir (ex: models/v1 → v1)
                 import os
                 version = os.path.basename(os.path.normpath(output_dir))
-                plots_dir = f"plots/{version}"
+                plots_dir = os.path.join("plots", version)
                 ensure_dir(plots_dir)
-                feature_importance_path = f"{plots_dir}/feature_importance.csv"
+                feature_importance_path = os.path.join(plots_dir, "feature_importance.csv")
                 feature_importance.to_csv(feature_importance_path, index=False)
                 mlflow.log_artifact(feature_importance_path)
 
@@ -166,10 +175,13 @@ def main():
     parser.add_argument('--train', type=str, default='data/processed/train_engineered.csv')
     parser.add_argument('--val', type=str, default='data/processed/val_engineered.csv')
     parser.add_argument('--output', type=str, default='models')
-    parser.add_argument('--params', type=str, default='params.yaml')
+    parser.add_argument('--params', type=str, default='mlops/params.yaml')
     args = parser.parse_args()
 
-    params = load_params(args.params)
+    # Always resolve params.yaml relative to project root
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+    params_path = args.params if os.path.isabs(args.params) else os.path.join(project_root, args.params)
+    params = load_params(params_path)
     trainer = ModelTrainer(params)
     trainer.train(args.train, args.val, args.output)
 

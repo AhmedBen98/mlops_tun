@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import json
 
-from src.utils import setup_logging, ensure_dir
+import utils
+setup_logging = utils.setup_logging
+ensure_dir = utils.ensure_dir
 
 logger = setup_logging()
 
