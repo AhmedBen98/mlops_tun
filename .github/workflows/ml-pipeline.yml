@@ -89,10 +89,10 @@ jobs:
           PYTHONPATH=. python3 src/feature_engineering.py --train data/processed/train.csv --val data/processed/val.csv --test data/processed/test.csv --output data/processed
       - name: Train model
         run: |
-          PYTHONPATH=. python3 src/train.py --dataset mlops
+          PYTHONPATH=. python3 src/train.py --train data/processed/train_engineered.csv --val data/processed/val_engineered.csv --output models
       - name: Evaluate model
         run: |
-          PYTHONPATH=. python3 src/evaluate.py --dataset mlops
+          PYTHONPATH=. python3 src/evaluate.py --test data/processed/test_engineered.csv --model models/model.pkl --output metrics
       - name: Upload metrics
         uses: actions/upload-artifact@v4
         with:
