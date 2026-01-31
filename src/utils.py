@@ -45,13 +45,22 @@ def load_params(params_file: str = "params.yaml") -> Dict[str, Any]:
         Dictionary containing parameters
     """
     if not os.path.isabs(params_file):
-        # Try relative to current working directory
+        # Try root (./params.yaml)
         if os.path.exists(params_file):
             resolved_path = params_file
+        # Try mlops/params.yaml
+        elif os.path.exists(os.path.join('mlops', params_file)):
+            resolved_path = os.path.join('mlops', params_file)
+        # Try script dir (for CI/CD)
         else:
-            # Try relative to the script's directory (for CI/CD)
             script_dir = os.path.dirname(os.path.abspath(__file__))
-            resolved_path = os.path.join(script_dir, params_file)
+            candidate = os.path.join(script_dir, params_file)
+            if os.path.exists(candidate):
+                resolved_path = candidate
+            elif os.path.exists(os.path.join(script_dir, '..', params_file)):
+                resolved_path = os.path.join(script_dir, '..', params_file)
+            else:
+                raise FileNotFoundError(f"params.yaml not found in root, mlops/, or script dir: {params_file}")
         params_file = resolved_path
     with open(params_file, 'r') as f:
         params = yaml.safe_load(f)
