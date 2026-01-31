@@ -83,7 +83,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run data processing
         run: |
-          PYTHONPATH=. python3 src/data_processing.py --input data/raw/mlops_dataset_original.csv --output data/processed
+          PYTHONPATH=. python3 src/data_processing.py --input data/raw/mlops_dataset_v3.csv --output data/processed
       - name: Run feature engineering
         run: |
           PYTHONPATH=. python3 src/feature_engineering.py --train data/processed/train.csv --val data/processed/val.csv --test data/processed/test.csv --output data/processed
