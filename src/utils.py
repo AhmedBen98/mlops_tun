@@ -1,4 +1,3 @@
-
 """
 Utility functions for the MLOps project
 """
@@ -9,6 +8,7 @@ import logging
 from pathlib import Path
 from typing import Dict, Any
 import numpy as np
+import os
 
 def setup_logging(log_file: str = "logs/app.log") -> logging.Logger:
     """
@@ -44,6 +44,8 @@ def load_params(params_file: str = "params.yaml") -> Dict[str, Any]:
     Returns:
         Dictionary containing parameters
     """
+    if not os.path.isabs(params_file):
+        params_file = os.path.join(os.getcwd(), params_file)
     with open(params_file, 'r') as f:
         params = yaml.safe_load(f)
     return params
