@@ -70,7 +70,7 @@ class ModelTrainer:
         logger.info(f"Training data shape: {X_train.shape}")
         logger.info(f"Validation data shape: {X_val.shape}")
 
-        mlflow.set_tracking_uri(self.params.get('mlflow', {}).get('tracking_uri', 'mlruns'))
+        mlflow.set_tracking_uri('mlruns')
         experiment_name = "visiteurs-prediction-experiment"
         mlflow.set_experiment(experiment_name)
 
